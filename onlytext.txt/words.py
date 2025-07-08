@@ -18,7 +18,8 @@ print("Giga" + 20) # result --> error
 #quotation marks = ბრჭყალები = ""
 #variables = ცვლადი (ყუთი, კონტეინერი)
 #value = მნიშვნელობა 
-#equal sign = ტოლობის ნიშანი 
+#equal sign = ტოლობის ნიშანი
+#underscore --> ( _ ) ანუ ქვედა ტირე
 
 #სტრინგების დამატებას (შეერთებას) ეწოდება "კონკატინაცია"
 print("dexter" + "rita")
