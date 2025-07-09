@@ -1,22 +1,22 @@
 # დავალება 1
-#car = "merc"
-#car = "bmw"
+car = "merc"
+car = "bmw"
 
-#print(car)
+print(car)
 
 # დავალება 2
 
-#car = "bmw"
-#Car = "audi"
-#cAr = "bentley"
-#caR = "lamborghini"
-#CAr = "porsche"
+car = "bmw"
+Car = "audi"
+cAr = "bentley"
+caR = "lamborghini"
+CAr = "porsche"
 
-#print(car)
-#print(Car)
-#print(cAr)
-#print(caR)
-#print(CAr)
+print(car)
+print(Car)
+print(cAr)
+print(caR)
+print(CAr)
 
 # დავალება 3
 
@@ -51,10 +51,10 @@ print(car_weigh)
 print(phone_weigh_in_grams)
 
 # დავალება 4
-user%name = "sauketeso"
-user surname = "sauketeso maswi"
-first-number = 200
-second.number = 123
+#user%name = "sauketeso"
+#user surname = "sauketeso maswi"
+#first-number = 200
+#second.number = 123
 
 # აქ ოთხივე მათგანში გვაქვს ერთი და იგივე შეცდომა რადგან როდესაც ცვლადში ერთ სიტყვაზე მეტია, მათ შორის დაშორებისა და ყველა სიმბოლოს გამოყენება მკაცრად არის აკრძალული გარდა ქვედა ტირისა
 # ასე გამოიყურება სწორი კოდები
