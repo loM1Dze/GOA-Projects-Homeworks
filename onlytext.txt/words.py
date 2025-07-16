@@ -36,28 +36,41 @@ print(k)
 
 #------------------------------------------------------------------------------------------------------------------
 
-print(type(5)) # type -> integer / class →› ‘int’ 
-print (type ("Giga")) # type -› string / class -› ‘str’ 
-print(type(3.14)) # type -> fLoat / class → ‘float’ 
-print (type(True)) # type -›boolean / class -> ‘bool*
+print(type(5))          # type -> integer / class →› ‘int’ 
+print (type ("Giga"))   # type -› string / class -› ‘str’ 
+print(type(3.14))       # type -> fLoat / class → ‘float’ 
+print (type(True))      # type -›boolean / class -> ‘bool*
 
 # --------------------------------------------------------------
 
-# str() - ფუნქცია რომელსაც გადაჰყავს მნიშვნელობები string ტიპის მონაცემად
+  # str() - ფუნქცია რომელსაც გადაჰყავს მნიშვნელობები string ტიპის მონაცემად
 
-print(type(str(5))) # result: string 5
+print(type(str(5)))      # result: string 5
 
-# int() - ფუნქცია რომელსაც გადაჰყავს მონაცემი ინტეჯერში
+  # int() - ფუნქცია რომელსაც გადაჰყავს მონაცემი ინტეჯერში
 
-print (type(int ("5"))) # result: integer 5
+print (type(int ("5")))  # result: integer 5
 
-# fLoat() - ფუნქცია რომელსაც გადაჰყავს მონაცემი ათწილადში
+  # fLoat() - ფუნქცია რომელსაც გადაჰყავს მონაცემი ათწილადში
 
-print (type(float(5))) # result: float 5
+print (type(float(5)))   # result: float 5
 
 #BooL() - ფუნქცია რომელსაც გადაჰყავს მნიშვნელობები booLean ტიპის მონაცემში. აქვს ისეთი ფუნქცია, რომ მისი
 # გამოყენებისას შეუძლია გადააქციოს int ტიპის მონაცემი 0 --> False-ად და 1 --> True-დ.
 
-print(bool(0)) # result: boolean False
+print(bool(0))           # result: boolean False
 
-print (bool(1)) # result: boolean True
+print (bool(1))          # result: boolean True
+
+#------------------------------------------------------------------------------------------------------
+
+# შედარების ოპერაციები(ოპერატორები)
+# >, <, == შედარების ოპერატორები
+# მინიჭების ოპერატორი   = ; ანიჭებს მნიშვნელობას მაგ: ნუმ = 3, ცვლადს მივანიჭეთ მნიშვნელობა
+
+print(10 > 5)               # True იმიტომ რომ 10 მართლაც მეტია 5 ზე
+print(15 < 3)               # False რადგან 15 არ არის მეტი 3 ზე
+print(14 == 15)             # False რადგან 14 არ არის 15 ის ტოლი
+print("Giga" == "Niga")      # False რადგან "Giga" არ არის "Niga"
+
+
