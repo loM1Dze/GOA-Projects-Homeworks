@@ -117,7 +117,7 @@ for i in range(32):
 first = input("Type anything:")
 second = input("Type anything 2 more times:")
 third = input("Type anything 1 more time:")
-fourth = input("Enter any number:")
+fourth = int(input("Enter any number:"))
 
 
 concatination = (first + second + third + str(fourth))
