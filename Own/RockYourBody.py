@@ -26,7 +26,7 @@ def tiktok():
     ]
     for text, delay in lines:
         for char in text:
-            print(f"[bold magenta]{char}[/bold magenta]", end='', flush=True)
+            print(f"[bold red]{char}[/bold red]", end='', flush=True)
             sleep(0.05)  # typing speed per character
         print()  # new line after each lyric
         sleep(delay)
