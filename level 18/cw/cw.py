@@ -36,13 +36,13 @@ autumnnums = 9, 10, 11.
 
 innum = int(input("Enter numbers from 1 to 12:"))
 
-if innum == winternums:
+if innum == 12 or 1 or 2:
     print("Winter")
-elif innum == springnums:
+elif innum == 3 or 4 or 5:
     print("Spring")
-elif innum == summernums:
+elif innum == 6 or 7 or 8:
     print("Summer")
-elif innum == autumnnums:
+elif innum == 9 or 10 or 11:
     print("Autumn")
 else:
     print("Type numbers which i said")
