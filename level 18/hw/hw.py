@@ -20,7 +20,7 @@ else:
 
 Mname = "giga"
 
-name = str(input("Enter your name:"))
+name = input("Enter your name:")
 
 if name == Mname:
     print("სეხნიები ვართ")

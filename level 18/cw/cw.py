@@ -29,20 +29,16 @@ else:
 # თუ ეს რიცხვი არის 6, 7, 8 -> დაპრინტეთ ზაფხული
 # თუ ეს რიხცვი არის 9, 10, 11 -> დაპრინტეთ შედმოგომა
 
-winternums = 12, 1, 2.
-springnums = 3, 4, 5.
-summernums = 6, 7, 8.
-autumnnums = 9, 10, 11.
 
 innum = int(input("Enter numbers from 1 to 12:"))
 
-if innum == 12 or 1 or 2:
+if innum == 12 or innum == 1 or innum == 2:
     print("Winter")
-elif innum == 3 or 4 or 5:
+elif innum == 3 or innum == 4 or innum == 5:
     print("Spring")
-elif innum == 6 or 7 or 8:
+elif innum == 6 or innum == 7 or innum == 8:
     print("Summer")
-elif innum == 9 or 10 or 11:
+elif innum == 9 or innum == 10 or innum == 11:
     print("Autumn")
 else:
     print("Type numbers which i said")
