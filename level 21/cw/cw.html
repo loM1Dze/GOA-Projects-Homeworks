@@ -1,0 +1,26 @@
+<!-- 1)შექმენით სარეგისტრაციო ფორმა,სადაც გექნებათ სამი ინფუთ,ერთ იქნება text ტიპის მეორე email ტიპის და მესამე password ტიპის,თთეულ ინფუთს უნდა ქონდეს საკუთარი label რომ მიხვდეს მომხმარებელი თუ რა უნდა შეიყვანოს ამ ინფუთში,label და input ები დააკავშირეთ ერთმანეთს,გამოიყენეთ id და for ატრიბუტები -->
+
+
+<head>   
+    <title>სარეგისტრაციო ფორმა</title>
+</head>
+<body>
+    <h2>სარეგისტრაციო ფორმა</h2>
+    <form>
+        <!-- სახელი -->
+        <label for="username">სახელი:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <!-- იმეილი -->
+        <label for="email">ელ-ფოსტა:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- პაროლი -->
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+    </form>
+</body>
+</html>
