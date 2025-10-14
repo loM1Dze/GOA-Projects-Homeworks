@@ -27,4 +27,3 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 user_input = int(input("შეიყვანე რიცხვი: "))
 
 print(my_list[2:user_input])
-
