@@ -84,6 +84,57 @@ print("ლუწი რიცხვების ჯამია:", sum_even)
 
 words = ["apple", "banana", "avocado", "grape", "apricot", "mango"]
 
-for word in words:
-    if word.startswith("a"):
-        print(word)
+for i in words:
+    if i.startswith("a"):
+        print(i)
+
+
+# 7) for ციკლით დაბეჭდე რიცხვები 0 დან 20 მდე.  
+#    თუ რიცხვი არის ნული -> "ნულია"  
+#    თუ კენტია -> "კენტია"  
+#    თუ ლუწია -> "ლუწია".
+
+
+
+for i in range(20): 
+    if i == 0:
+        print(i, "ნულია")
+    elif i % 2 == 0:
+        print(i, "ლუწია")
+    else:
+        print(i, "კენტია")
+
+
+
+# 8) შექმენი სია -> [5, 15, 25, 35, 45, 55] 
+#    for ციკლით დაუარე სიას და დაბეჭდე მხოლოდ ის ელემენტები, რომლებიც იყოფა 5 ზე.
+
+numbers = [5, 15, 25, 35, 45, 55]
+
+for i in numbers:
+    if i % 5 == 0:
+        print(i)
+
+
+
+
+# 9) მომხმარებელს შემოატანინე სიტყვა.  
+#    for ციკლით დაბეჭდე ამ სიტყვის თითოეული ასო ცალცალკე.
+
+
+word = input("შეიყვანეთ სიტყვა: ")
+
+for i in word:
+    print(i)
+
+
+# 10) შექმენი ცვლადი -> total = 0  
+#     for ციკლით დაამატე 1 დან 10 მდე ყველა რიცხვი total-ში.  
+#     ბოლოს დაბეჭდე -> "ჯამი არის: X".
+
+total = 0
+
+for i in range(1, 10):
+    total += i
+
+print("ჯამი არის:", total)
