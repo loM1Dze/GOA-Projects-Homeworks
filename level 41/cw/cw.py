@@ -24,6 +24,7 @@ print(list)
 # და დაპრინტე საბოლოო სია და ნახე ამოიშალა თუ არა
 
 list = [980 , "saba", 231 , "kote" , "cico" , True , "gio" , 40.5]
-list.pop(3)
-list.pop(4)
+list.remove(True)   
+list.remove("kote")
 print(list)
+
