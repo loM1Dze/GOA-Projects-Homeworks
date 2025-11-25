@@ -62,10 +62,10 @@ nums.extend(num)
 
 # 9) შექმენი სია სახელად foods და დააბრუნე შებრუნებული სია.
 
-foods = ["burger", "pizza", "kebab", "fries"]  
-reversed_foods = reversed(foods)
+foods = ["burger", "pizza", "kebab", "fries"]
+foods.reverse()
 
-print(reversed_foods)
+print(foods)
 
 
 # 10) შექმენი სია cities და იპოვე რომელ ინდექსზე დგას "tbilisi".
@@ -165,9 +165,87 @@ values = [1, 2, 3, 4]
 
 index = int(input("Enter index: "))
 
-if 0 <= index <= len(values):
+if 0 <= index < len(values):
     values.pop(index)
 else:
     print("Index out of range")
 
 print(values)
+
+
+# 21)შექმენი სია pets = ["cat", "dog", "hamster"].  მომხმარებელს შემოატანინე შინაური ცხოველის სახელი. თუ იგი არის სიის შიგნით, remove()-ით ამოშალე და დაბეჭდე "Removed", თუ არა — დაბეჭდე "Not found" და სია უცვლელი დატოვე; საბოლოოდ დაბეჭდე სია.
+
+pets = ["cat", "dog", "hamster"]
+
+re_pet = input("Enter any pet:")
+
+if re_pet in pets:
+    pets.remove(re_pet)
+    print("Removed")
+else:
+    print("Not found")
+
+print(pets)
+
+
+# 22)შექმენი სია a = [5, 5, 7]. მომხმარებელს შემოატანინე რიცხვი. თუ რიცხვი არის სიის ელემენტი, დაბეჭდე რამდენჯერ არის სიაში - count() ფუნქციის გამოყენებით. სხვა შემთხვევაში append()-ით ჩასვი ის სიაში და დაბეჭდე სია.
+
+a = [5, 5, 7]
+
+user_num = int(input("Enter a number:"))
+
+if user_num in a:
+    print(a.count(user_num))
+else:
+    a.append(user_num)
+    print(a)
+
+
+# 23)შექმენი სია queue = ["first", "second"].  მომხმარებელს შემოატანინე ახალი ელემენტი და insert()-ით ჩასვი სიის დასაწყისში. შემდეგ if-ით შეამოწმე სიის სიგრძე — თუ უფრო დიდია 5-ზე, pop()-ით ამოშალე ბოლო ელემენტი; ბოლოს დაბეჭდე სია, თუ არ არის 5-ზე მეტი დაბეჭდე
+# შებრუნებულისია.
+
+queue = ["first", "second"]
+
+new_item = input("Enter new element:")
+
+queue.insert(0, new_item)
+
+if len(queue) > 5:
+    queue.pop()
+    print(queue)
+else:
+    queue.reverse()
+    print(queue)
+
+
+# 24)შექმენი სია nums = [2, 4, 6].  მომხმარებელს შემოატანინე რიცხვი. თუ რიცხვი დადებითია, append()-ით დაამატე; თუ 0-ია ან ნაკლებია ნულზე, დაბეჭდე "Only positive allowed". ბოლოს დაბეჭდე სია.
+
+nums = [2, 4, 6]
+
+new_item = int(input("Enter num:"))
+
+if new_item > 0:
+    nums.append(new_item)
+elif new_item == 0 or new_item < 0:
+    print("Only positive allowed")
+
+print(nums)
+
+
+
+# 25) შექმენი სია mix = ["x", "y", "z"]. extend()-ით დაუმატე [1, 2, 3]. შემდეგ მომხმარებელს შემოატანინე ასო; თუ ეს ასო არის სიაში, remove()-ით წაშალე პირველად როცა შეგხვდება და დაბეჭდე "Removed", თუ არა — დაბეჭდე "No such element". ბოლოს დაბეჭდე სია.
+
+mix = ["x", "y", "z"]
+extended_mix = [1, 2, 3]
+
+mix.extend(extended_mix)
+
+remo = input("Enter a letter:")
+
+if remo in mix:
+    mix.remove(remo)
+    print("Removed")
+else:
+    print("No such element")
+
+print(mix)
