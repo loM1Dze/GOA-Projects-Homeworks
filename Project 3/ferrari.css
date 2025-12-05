@@ -1,0 +1,11 @@
+a:hover{
+    background-color: silver;
+}
+
+img{
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
