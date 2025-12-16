@@ -42,7 +42,7 @@ words = ["apple", "Banana", "cherry", "Dog"]
 for i in range(len(words)):
     first = words[i][0]
     if first == first.lower():
-        words[i] = first.upper() + words[i][1:]
+        words[i] = first.capitalize() + words[i][1:]
 
 print(words)
 
@@ -62,7 +62,5 @@ print(words)
 # len() აბრუნებს სიის ელემენტების რაოდენობას.
 
 # lower() სტრინგის ყველა ასოს ხდის პატარა ასოდ.
-
-# upper() სტრინგის ყველა ასოს ხდის დიდ ასოდ.
 
 # capitalize() სტრინგის პირველ ასოს ხდის დიდად, დანარჩენებს – პატარად.
