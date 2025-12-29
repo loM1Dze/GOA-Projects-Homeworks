@@ -14,3 +14,18 @@ while i < len(words):
 print(words)
 
 
+
+# 2) შექმენით სტრინგის ცვლადი და ცარიელი სია. სტრინგში მყოფი დიდი ასოები გახადეთ პატარა და ამ სიაში ჩაამატეთ, ხოლო სტრინგში მყოფი პატარა ასოები გახადეთ დიდი და ასევე ჩააგდეთ ამ სიაში. დაპრინტეთ საბოლოო სია, გამოიყენეთ while ციკლი.
+
+text = "PyThOnLiNuX"
+result = []
+
+i = 0
+while i < len(text):
+    if text[i].isupper():
+        result.append(text[i].lower())
+    else:
+        result.append(text[i].upper())
+    i += 1
+
+print(result)
