@@ -51,11 +51,9 @@ print(words)
 numbers = [2, 4, 6, 8, 10]
 
 total = 0
-count = 0
 
 for i in numbers:
     total += i
-    count += 1
 
-average = total / count
+average = total / len(numbers)
 print(average)
