@@ -75,8 +75,23 @@ for i in range(len(text)):
     elif text[i].isupper():
         symbols.append("-")
 
-print(symbols)
+i = 0
+i1 = symbols.count("-")
 
+while i < len(symbols):
+    if i1 % 2 == 0:
+        if symbols[i] == "+":
+            symbols.pop(i)
+        else:
+            i += 1
+    else:
+        if symbols[i] == "-":
+            symbols.pop(i)
+        else:
+            i += 1
+
+print(symbols)
+        
 
 # 8) შექმენით სტრინგის ცვლადი და შემოაბრუნეთ ეს სტრინგი. არ გამოიყენოთ slicing. და ყველა ასო გაუხადეთ დიდი. დაპრინტეთ საბოლოო სტრინგი.
 
