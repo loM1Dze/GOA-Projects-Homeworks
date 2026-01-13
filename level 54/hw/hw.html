@@ -1,0 +1,127 @@
+<!-- 1) შექმენით 2 პარაგრაფი, 1 სათაური და 1 ღილაკი. პარაგრაფების ზომა გახადეთ 20px, ფერი მწვანე, ფონის ფერი ლურჯი,
+ზღვარი იყოს 3px სისქის, solid და წითელი, პარაგრაფები იდგნენ ცენტრში, სათაური გახადეთ 25px ზომის, ფერი იასამნისფერი,
+ფონის ფერი მწვანე, ზღვარი იყოს 5px სისქის, solid და ლურჯი, სათაურიც იდგეს ცენტრში, ღილაკის ზომა გახდეთ 15px, ფერი ყვითელი,
+ფონის ფერი ნარინჯისფერი, ზღვარი იყოს 2px სისქის, solid და ვარდისფერი, ღილაკიც იდგეს ცენტრში. -->
+
+
+<html>
+<head>>
+    <title>დავალება</title>
+    <style>
+        h1 {
+            font-size: 25px;
+            color: purple;
+            background-color: green;
+            border: 5px solid blue;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            color: green;
+            background-color: blue;
+            border: 3px solid red;
+            text-align: center;
+        }
+
+        button {
+            font-size: 15px;
+            color: yellow;
+            background-color: orange;
+            border: 2px solid pink;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ეს არის სათაური</h1>
+
+    <p>ეს არის პირველი პარაგრაფი</p>
+    <p>ეს არის მეორე პარაგრაფი</p>
+
+    <button>დააჭირე</button>
+
+</body>
+</html>
+
+
+<!-- 2) შექმენით ერთი დივი, მასში მოათავსეთ 4 პარაგრაფი, 2 სათაური და 2 ღილაკი. ყველა ბავშვი ელემენტი გასტილეთ მშობელი დივი
+ელემენტის გასტილვით. გაუწერეთ ყველა სტილი რაც გვაქვს ნასწავლი. -->
+
+<div style="
+    color: green;
+    background-color: lightblue;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid red;
+    padding: 10px;
+">
+
+    <h1>სათაური 1</h1>
+    <h2>სათაური 2</h2>
+
+    <p>პარაგრაფი 1</p>
+    <p>პარაგრაფი 2</p>
+    <p>პარაგრაფი 3</p>
+    <p>პარაგრაფი 4</p>
+
+    <button>ღილაკი 1</button>
+    <button>ღილაკი 2</button>
+
+</div>
+
+
+<!-- 3) შექმენით ერთი დივი, მასში მოათავსეთ 3 პარაგრაფი, 3 სათაური და 3 ღილაკი. ყველა ელემენტი გასტილეთ მშობელი დივ ელემენტის გასტილვის საშუალებით. დივს გაუწერეთ 30px font-size, ფერი ლურჯი, მწვანე ფონის ფერი, ზღვარი იყოს 5px სისქის, solid და იასამნისფერი, და ყველაფერი იდგეს ცენტრში. ამ ელემენტებიდან, ორი პარაგრაფი, ერთი სათაური და ერთი ღილაკი გასტილეთ ცალკე - მიანიჭეთ 20px ზომა, ფერი ყვითელი, ფონის ფერი ლურჯი, გაუწერეთ 3px სისქის ზღვარი, solid და ზღვარის ფერი იყოს წითელი, და ეს ელემენტები იდგნენ მარჯვნივ. -->
+
+
+<div style="
+    font-size: 30px;
+    color: blue;
+    background-color: green;
+    border: 5px solid purple;
+    text-align: center;
+">
+
+    <!-- ჩვეულებრივი ელემენტები მშობელ div-ის სტილით -->
+    <h1>სათაური 1</h1>
+    <h2 style="font-size: 20px; color: yellow; background-color: blue; border: 3px solid red; text-align: right;">სათაური 2 (მარჯვნივ)</h2>
+    <h2>სათაური 3</h2>
+
+    <p>პარაგრაფი 1</p>
+    <p style="font-size: 20px; color: yellow; background-color: blue; border: 3px solid red; text-align: right;">პარაგრაფი 2 (მარჯვნივ)</p>
+    <p style="font-size: 20px; color: yellow; background-color: blue; border: 3px solid red; text-align: right;">პარაგრაფი 3 (მარჯვნივ)</p>
+
+    <button>ღილაკი 1</button>
+    <button style="font-size: 20px; color: yellow; background-color: blue; border: 3px solid red; text-align: right;">ღილაკი 2 (მარჯვნივ)</button>
+    <button>ღილაკი 3</button>
+
+</div>
+
+
+<!-- 5) გადახედეთ CSS-ით გასტილვის სამივე მეთოდს, ახსენით სამივე და მოიყვანეთ სათითაო მაგალითები -->
+
+<!-- 1 ვარიანტი თეგში სტაილ ატრიბუტის გამოყენება -->
+<p style="color: red; font-size: 20px;">ეს ტექსტი წითელია და 20px ზომისაა.</p>
+
+<!-- 2 ვარიანტი სტაილ თეგი ჰედ ნაწილში -->
+ <head>
+<style>
+    p {
+        color: blue;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <p>ეს ტექსტი ლურჯია და 18px ზომისაა.</p>
+</body>
+
+<!-- 3 ვარიანტი ცალკე ცსს ფაილის შექმნა რპმელსაც ინდექს ჰტმლსთან ვაკავშირებთ ლინკით -->
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>ეს ტექსტი მწვანეა და 16px ზომისაა.</p>
+</body>
+
