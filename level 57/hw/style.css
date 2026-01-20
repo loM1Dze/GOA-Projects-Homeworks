@@ -1,0 +1,16 @@
+
+.box1 {
+    font-size: 38px;       
+    color: blue;           
+    background-color: green;
+    border: 3px solid red;    
+}
+
+
+.box2 {
+    font-size: 46px;         
+    color: purple;
+    background-color: brown; 
+    border: 7px solid yellow; 
+}
+

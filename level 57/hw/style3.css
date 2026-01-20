@@ -1,0 +1,27 @@
+
+.table1 {
+    border: 2px solid black;
+}
+
+.table1 th, .table1 td {
+    font-size: 15px;            
+    color: blue;                 
+    background-color: green;      
+    border: 1px solid black;     
+    padding: 8px;
+    text-align: center;
+}
+
+
+.table2 {
+    border: 2px solid black;
+}
+
+.table2 th, .table2 td {
+    font-size: 18px;
+    color: green;
+    background-color: red;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
