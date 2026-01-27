@@ -1,0 +1,29 @@
+#para1 {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#para2 {
+    color: blue;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#para3 {
+    color: green;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#para4 {
+    color: purple;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#para5 {
+    color: orange;
+    font-size: 22px;
+    background-color: #f0f0f0;
+}
