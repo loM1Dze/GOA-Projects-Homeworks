@@ -19,14 +19,14 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 
 .main-title {
   font-size: 48px;
   font-weight: 600;
-  margin: 40px;
   margin-right: 1050px;
   color: white;
 
@@ -35,18 +35,16 @@ nav a:hover {
 .photo-row {
   display: flex;           
   justify-content: center;  
-  align-items: center;  
   gap: 40px;
 }
 
 .photo-row .product {
-  text-align: center;
-  background-color: white
+  background-color: rgb(255, 255, 255)
 }
 
 .photo-row .product h1,
 .photo-row .product p {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 
