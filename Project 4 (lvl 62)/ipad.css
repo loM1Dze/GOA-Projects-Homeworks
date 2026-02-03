@@ -3,6 +3,7 @@ body {
   background: #000000;
   color: #000000;
   text-align: center;
+  margin: 0;
 }
 
 
@@ -39,7 +40,8 @@ nav a:hover {
 }
 
 .photo-row .product {
-  background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 .photo-row .product h1,
