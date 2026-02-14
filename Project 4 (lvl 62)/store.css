@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    right: 33%;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.flex {
+    display: flex;
+    color: gray;
+    width: 100%;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    gap: 50px;
+    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    padding: 15px 15px;
+}
+
+.right {
+    font-size: 35px;
+}
+
+.left {
+    font-size: 15px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h1 {
+    color: rgb(0, 0, 0);
+    padding: 20px 15px;
+    text-align: start;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.card p {
+    padding: 5px 15px;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    padding: 15px 15px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.section-header {
+    color: white;
+    padding-left: 15%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+header {
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+header img {
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    gap: 10px;
+}
+
+nav a {
+    font-size: 11px;
+}
+
+.container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.section-header {
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.links {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flex {
+    flex-direction: column;
+    gap: 10px;
+}
