@@ -1,92 +1,131 @@
 <!-- 1) შექმენი ერთი დივი რომელშიც მოთავსებული გექნებათ სათაური და პარაგრაფი და დივს მიანიჭეთ ერთი კლასი და ერთი id. კლასს მიანიჭეთ ფერი, უკანა ფონის ფერი, ზომა, ზღვარი და დააყენეთ ცენტრში, ხოლო id-ის მიანიჭეთ განსხვავებული ფერი და განსხვავებული უკანა ფონის ფერი. (დღევანდელ ყველა დავალებაში გამოიყენეთ ან RGB ან HEX ფერებისთვის.) -->
 
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Div Styling Example</title>
-<style>
+    <meta charset="UTF-8">
+    <title>Div Styling Example</title>
+    <style>
+        .my-class {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 123, 255);
+            width: 400px;
+            padding: 20px;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 50px auto;
+            text-align: center;
+            border-radius: 10px;
+        }
 
-  .my-class {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 123, 255);
-    width: 400px;
-    padding: 20px;
-    border: 2px solid rgb(0, 0, 0);
-    margin: 50px auto;
-    text-align: center;
-    border-radius: 10px;
-  }
 
-
-  #my-id {
-    color: #000000;
-    background-color: #FFD700;
-  }
-</style>
+        #my-id {
+            color: #000000;
+            background-color: #FFD700;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="my-class" id="my-id">
-  <h2>სათაური</h2>
-  <p>პარაგრაფის</p>
-</div>
+    <div class="my-class" id="my-id">
+        <h2>სათაური</h2>
+        <p>პარაგრაფის</p>
+    </div>
 
 </body>
+
 </html>
 
 <!-- 2) შექმენი ერთი პარაგრაფი და მას გაუწერე ერთი id და ერთი კლასი, id-ს მიანიჭე ყველა ნასწავლი სტილები და კლასს მიანიჭე ყველა სტილები განსხვავებული მნიშვნელობებით. -->
 
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>სტილები პარაგრაფზე</title>
-<style>
+    <meta charset="UTF-8">
+    <title>სტილები პარაგრაფზე</title>
+    <style>
+        #Para {
+            color: blue;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            background-color: lightgray;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            width: 50%;
+            height: auto;
+            box-shadow: 5px;
+            border-radius: 10px;
+        }
 
-  #myParagraph {
-    color: blue;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    background-color: lightgray;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 20px;
-    width: 50%;
-    height: auto;
-    box-shadow: 5px;
-    border-radius: 10px;
-  }
-
-  .myClass {
-    color: red;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: line-through;
-    text-transform: lowercase;
-    letter-spacing: 3px;
-    line-height: 1.2;
-    text-align: left;
-    background-color: yellow;
-    border: 1px dashed green;
-    padding: 5px;
-    margin: 10px;
-    width: 70%;
-    height: auto;
-    box-shadow: 2px;
-    border-radius: 4px;
-  }
-</style>
+        .Clss {
+            color: red;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: line-through;
+            text-transform: lowercase;
+            letter-spacing: 3px;
+            line-height: 1.2;
+            text-align: left;
+            background-color: yellow;
+            border: 1px dashed green;
+            padding: 5px;
+            margin: 10px;
+            width: 70%;
+            height: auto;
+            box-shadow: 2px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
+
 <body>
 
-<p id="myParagraph" class="myClass">
-  პარაგრაფი რომელსაც აქვს id და class სხვადასხვა სტილებით.
-</p>
+    <p id="Para" class="Clss">
+        პარაგრაფი რომელსაც აქვს id და class სხვადასხვა სტილებით.
+    </p>
 
 </body>
+
+</html>
+
+
+<!-- 3) შექმენი ერთი დივი რომელშიც მოთავსებული იქნება ერთი პარაგრაფი. ამ დივს გაუწერეთ კლასი და პარაგრაფსაც გაუწერეთ კლასი, მიანიჭეთ განსხვავებული სტილები, დააკვირდით შედეგს. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>დივისა და პარაგრაფის სტილები</title>
+    <style>
+        .my-div {
+            width: 300px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+
+        .my-paragraph {
+            color: #ff6600;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-div">
+        <p class="my-paragraph"> პარაგრაფი დივის შიგნით განსხვავებული სტილით</p>
+    </div>
+</body>
+
 </html>
