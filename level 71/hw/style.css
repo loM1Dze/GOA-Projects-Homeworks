@@ -1,0 +1,19 @@
+#p1 {
+    font-weight: normal;
+}
+
+#p2 {
+    font-weight: bold;
+}
+
+#p3 {
+    font-weight: bolder;
+}
+
+#p4 {
+    font-weight: lighter;
+}
+
+#p5 {
+    font-weight: inherit;
+}

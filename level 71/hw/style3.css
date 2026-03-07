@@ -1,0 +1,11 @@
+#container {
+    font-weight: 500;
+}
+
+#names {
+    font-weight: inherit;
+}
+
+#surnames {
+    font-weight: bolder;
+}
