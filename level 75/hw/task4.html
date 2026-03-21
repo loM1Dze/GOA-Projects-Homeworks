@@ -1,0 +1,80 @@
+<!-- 4) შექმენით დალაგებული სია ქვეყნებზე, და გასტილეთ list-style-type: upper-alpha; კუთვნილებით. თითოეული ქვეყნის ქვეშ ჩაამატეთ დაულაგებელი სია ქალაქებისთვის და გასტილეთ list-style-type: square; კუთვნილებით. თქვენს სიებს გაუწერეთ ფერი, უკანა ფონის ფერი, ზღვარი, ტექსტის სისქე, ტექსტის ზომა, font-family და text-decoration კუთვნილებები. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ქვეყნები და ქალაქები</title>
+
+    <style>
+        body {
+            background-color: #111;
+            text-align: center;
+            color: white;
+        }
+
+
+        ol {
+            list-style-type: upper-alpha;
+            color: #00ffcc;
+            background-color: #222;
+            border: 2px solid #00ffcc;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Verdana;
+            text-decoration: none;
+            display: inline-block;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+
+        ul {
+            list-style-type: square;
+            color: #ffcc00;
+            background-color: #333;
+            border: 2px solid #ffcc00;
+            font-weight: normal;
+            font-family: Tahoma;
+            text-decoration: none;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>ქვეყნები და მათი ქალაქები</h1>
+
+    <ol>
+        <li>საქართველო
+            <ul>
+                <li>თბილისი</li>
+                <li>ბათუმი</li>
+                <li>ქუთაისი</li>
+            </ul>
+        </li>
+
+        <li>აშშ
+            <ul>
+                <li>ნიუ-იორკი</li>
+                <li>ლოს-ანჯელესი</li>
+                <li>ჩიკაგო</li>
+            </ul>
+        </li>
+
+        <li>საფრანგეთი
+            <ul>
+                <li>პარიზი</li>
+                <li>ლიონი</li>
+                <li>მარსელი</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>

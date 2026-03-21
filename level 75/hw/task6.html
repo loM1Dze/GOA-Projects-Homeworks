@@ -1,0 +1,88 @@
+<!-- 6) შექმენით დაულაგებელი სია რესტორნების ისე, რომ სია არანაირად არ იყოს დანომრილი ან მონიშნული. თითოეულ რესტორნის ქვეშ ჩაამატეთ დაულაგებელი სია კონკრეტული რესტორნის მენიუთი, და დაულაგებელი სია გასტილეთ ისეთი კუთვნილებით რომ თითოეულ li ელემენტს უკან ეწეროს ოთკუთხედი ნიშანი. თქვენს სიებს გაუწერეთ ფერი, უკანა ფონის ფერი, ზღვარი, ტექსტის სისქე, font-family, ტექსტის ზომა, და ეს ყველა კუთვნილება შეუცვლეთ მაშინ როცა რომელიმე li ელემენტს დააჭერთ მაუსით. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>რესტორნები</title>
+
+    <style>
+        body {
+            background-color: #111;
+            text-align: center;
+            color: white;
+        }
+
+
+        ul.main {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+
+        ul.menu {
+            list-style-type: square;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+
+        li {
+            color: #00ffcc;
+            background-color: #222;
+            border: 2px solid #00ffcc;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana;
+            padding: 30px;
+            margin: 5px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+
+        li:active {
+            color: #ffcc00;
+            background-color: #333;
+            border: 2px solid #ffcc00;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: Tahoma;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>რესტორნები და მათი მენიუ</h1>
+
+    <ul class="main">
+        <li>Restaurant 1
+            <ul class="menu">
+                <li>პიცა</li>
+                <li>ბურგერი</li>
+                <li>პასტა</li>
+            </ul>
+        </li>
+
+        <li>Restaurant 2
+            <ul class="menu">
+                <li>ხინკალი</li>
+                <li>ხაჭაპური</li>
+                <li>მწვადი</li>
+            </ul>
+        </li>
+
+        <li>Restaurant 3
+            <ul class="menu">
+                <li>სალათი</li>
+                <li>სტეიკი</li>
+                <li>დესერტი</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>

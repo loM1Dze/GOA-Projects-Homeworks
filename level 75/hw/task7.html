@@ -1,0 +1,90 @@
+<!-- 7) შექმენით დაულაგებელი სია თქვენი ჰობებისთვის, სადაც თითოეული ელემენტი არის მონიშნული მრგვალი, ცარიელი ფორმით, თითოეული ჰობის ქვეშ ჩაამატეთ დალაგებული სია რომელსაც გასტილევათ ისეთი კუთვნილებით რომ თითოეულ li ელემენტს უკან ეწეროს ქართული ასო ანბანის მიხედვით. თქვენს სიებს გაუწერეთ ფერი, უკანა ფონის ფერი, ზღვარი, ტექსტის სისქე, font-family, ტექსტის ზომა და გაცენტრეთ, და ეს ყველა კუთვნილება შეუცვლეთ მაშინ როცა რომელიმე li ელემენტთან მიიტანთ კურსორს. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ჰობები</title>
+
+    <style>
+        body {
+            background-color: #111;
+            text-align: center;
+            color: white;
+        }
+
+
+        ul {
+            list-style-type: circle;
+            display: inline-block;
+            padding: 20px;
+        }
+
+
+        ol {
+            list-style-type: georgian;
+            padding: 20px;
+            margin-top: 5px;
+        }
+
+
+        li {
+            color: #00ffcc;
+            background-color: #222;
+            border: 2px solid #00ffcc;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+
+        li:hover {
+            color: #ffcc00;
+            background-color: #333;
+            border: 2px solid #ffcc00;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: Tahoma;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <ul>
+        <li>გეიმინგი
+            <ol>
+                <li>Racing</li>
+                <li>Shooting</li>
+                <li>Open World</li>
+                <li>Fantasy</li>
+                <li>Survival</li>
+            </ol>
+        </li>
+
+        <li>ვიდეო მონტაჟი
+            <ol>
+                <li>Clips editing</li>
+                <li>Effects</li>
+                <li>Transitions</li>
+            </ol>
+        </li>
+
+        <li>მანქანები
+            <ol>
+                <li>Drifting</li>
+                <li>Tuning</li>
+                <li>Racing</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+
+</html>

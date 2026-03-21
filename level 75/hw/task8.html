@@ -1,0 +1,76 @@
+<!-- 8) შექმენით დაულაგებელი სია რომელშიც მოათავსებთ საკვებ პროდუქტებს,  სადაც თითოეული ელემენტი არის მონიშნული შევსებული წრეებით. თითოეული პროდუქტის ქვეშ ჩაამატეთ დაულაგებელი სია რომელშიც ეწერება კონრეტული პროდუქტში არსებული ვიტამინები, და ეს ქვე-დაულაგებელი სია გასტილეთ ისეთი კუთვნილებით რომ თითოეულ li ელემენტს უკან ეწეროს ცარიელი წრე. თქვენს სიებს გაუწერეთ ფერი, უკანა ფონის ფერი, ზღვარი, ტექსტის სისქე, font-family, ტექსტის ზომა და იდგნენ მარჯვნივ. -->
+
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>საკვები პროდუქტები</title>
+
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            text-align: right;
+        }
+
+
+        ul.main {
+            list-style-type: disc;
+            display: inline-block;
+            padding: 20px;
+        }
+
+
+        ul.vitamins {
+            list-style-type: circle;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+
+        li {
+            color: #00ffcc;
+            background-color: #222;
+            border: 2px solid #00ffcc;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>პროდუქტების და ვიტამინები</h1>
+
+    <ul class="main">
+        <li>ვაშლი
+            <ul class="vitamins">
+                <li>ვიტამინი C</li>
+                <li>ვიტამინი A</li>
+            </ul>
+        </li>
+
+        <li>ბანანი
+            <ul class="vitamins">
+                <li>ვიტამინი B6</li>
+                <li>ვიტამინი C</li>
+            </ul>
+        </li>
+
+        <li>სტაფილო
+            <ul class="vitamins">
+                <li>ვიტამინი A</li>
+                <li>ვიტამინი K</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!-- 2) შექმენით დალაგებული სია ყოველდღიური საქმიანობებისთვის, გასტილეთ list-style-type: decimal-leading-zero; კუთვნილებით, ერთ-ერთ li თეგში ჩასვით დაულაგებელი სია ქვე-საქმიანობებისთვის და გასტილეთ list-style-type: circle; კუთვნილებით. თქვენს სიებს გაუწერეთ ფერი, უკანა ფონის ფერი, ზღვარი, ტექსტის სისქე და ტექსტის ზომა. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>დღიური საქმიანობები</title>
+
+    <style>
+        body {
+            background-color: #111;
+            text-align: center;
+            color: white;
+        }
+
+
+        ol {
+            list-style-type: decimal-leading-zero;
+            color: #00ffcc;
+            background-color: #222;
+            border: 2px solid #00ffcc;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 35px;
+            border-radius: 10px;
+        }
+
+
+        ul {
+            list-style-type: circle;
+            color: #ffcc00;
+            background-color: #333;
+            border: 2px solid #ffcc00;
+            font-size: 16px;
+            font-weight: normal;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ol>
+
+        <li>სწავლა
+            <ul>
+                <li>მათემატიკა</li>
+                <li>პროგრამირება</li>
+                <li>ინგლისური</li>
+            </ul>
+        </li>
+
+        <li>გართობა</li>
+        <li>ვარჯიში</li>
+    </ol>
+
+</body>
+
+</html>

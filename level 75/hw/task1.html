@@ -1,0 +1,89 @@
+<!-- 1) შექმენით დალაგებული სია რომელშიც მოთავსებული იქნება თქვენი 5 საყვარელი ფილმი, და სტილად მიანიჭეთ - list-style-type: upper-roman; თითო ფილმის ქვეშ დაამატეთ დაულაგებელი სია ჟანრებისთვის და გასტილეთ list-style-type: square; კუთვნილებით. თქვენს სიებს გაუწერეთ ფერი, უკანა ფონის ფერი, font-family, ზომა, სისქე, და  მოათავსეთ ცენტრში. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ფილმების სია</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        ol {
+            list-style-type: upper-roman;
+            color: #00ffcc;
+            background-color: #222;
+            font-family: Verdana;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        
+        ul {
+            list-style-type: square;
+            color: #ffcc00;
+            background-color: #333;
+            font-family: Tahoma;
+            font-size: 16px;
+            font-weight: normal;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <ol>
+        <li>The Maze Runner
+            <ul>
+                <li>Action</li>
+                <li>Sci-Fi</li>
+                <li>Adventure</li>
+            </ul>
+        </li>
+
+        <li>San Andreas
+            <ul>
+                <li>Action</li>
+                <li>fantasy</li>
+            </ul>
+        </li>
+
+        <li>A Quiet Place
+            <ul>
+                <li>Horror</li>
+                <li>Thriller</li>
+            </ul>
+        </li>
+
+        <li>Triangle
+            <ul>
+                <li>Horror</li>
+                <li>Mystery</li>
+            </ul>
+        </li>
+
+        <li>The Mist
+            <ul>
+                <li>Horror</li>
+                <li>Drama</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>

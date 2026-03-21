@@ -1,0 +1,77 @@
+<!-- 3) შექმენით დაულაგებელი სია კატეგორიებისთვის, მაგალითად: საკვები, სასმელი და გასტილეთ list-style-type: disc; კუთვნილებით. თითო კატეგორიაში ჩასვით დალაგებული სია პროდუქტებისთვის და გასტილეთ list-style-type: lower-alpha; კუთვნილებით. თქვენს სიებს გაუწერეთ ფერი, უკანა ფონის ფერი, ტექსტის სისქე, ტექსტის ზომა და საზღვარი. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>კატეგორიები</title>
+
+    <style>
+        body {
+            background-color: #111;
+            text-align: center;
+            color: white;
+        }
+
+
+        ul {
+            list-style-type: disc;
+            color: #00ffcc;
+            background-color: #222;
+            border: 2px solid #00ffcc;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+
+        ol {
+            list-style-type: lower-alpha;
+            color: #ffcc00;
+            background-color: #333;
+            border: 2px solid #ffcc00;
+            font-size: 16px;
+            font-weight: normal;
+            padding: 20px;
+            margin-top: 5px;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>კატეგორიები</h1>
+
+    <ul>
+        <li>საკვები
+            <ol>
+                <li>პური</li>
+                <li>ხორცი</li>
+                <li>პიცა</li>
+            </ol>
+        </li>
+
+        <li>სასმელი
+            <ol>
+                <li>წყალი</li>
+                <li>კოკა-კოლა</li>
+                <li>წვენი</li>
+            </ol>
+        </li>
+
+        <li>დესერტი
+            <ol>
+                <li>ტორტი</li>
+                <li>შოკოლადი</li>
+                <li>ნაყინი</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+
+</html>

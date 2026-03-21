@@ -1,0 +1,105 @@
+<!-- 5) შექმენით დალაგებული სია რომელშიც მოთავსებული იქნება პროგრამირების ენები, და გასტილეთ list-style-type: lower-roman; კუთვნილებით. თითოეულ პროგრამირების ენას ჩაუმატეთ დაულაგებელი სია მისი თვისებებისთვის და გასტილეთ list-style-type: circle; კუთვნილებით. თქვენს სიებს გაუწერეთ ფერი, უკანა ფონის ფერი, ზღვარი, ტექსტის სისქე, font-family, ტექსტის ზომა, და ეს ყველა კუთვნილება შეუცვლეთ მაშინ როცა რომელიმე li ელემენტთან მიიტანთ კურსორს. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>პროგრამირების ენები</title>
+
+    <style>
+        body {
+            background-color: #111;
+            text-align: center;
+            color: white;
+        }
+
+
+        ol {
+            list-style-type: lower-roman;
+            display: inline-block;
+            padding: 20px;
+        }
+
+
+        ul {
+            list-style-type: circle;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+
+        li {
+            color: #00ffcc;
+            background-color: #222;
+            border: 2px solid #00ffcc;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+
+        li:hover {
+            color: #ffcc00;
+            background-color: #333;
+            border: 2px solid #ffcc00;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: Tahoma;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>პროგრამირების ენები</h1>
+
+    <ol>
+        <li>Python
+            <ul>
+                <li>მარტივი სინტაქსი</li>
+                <li>სწრაფი განვითარება</li>
+                <li>მრავალმხრივი გამოყენება</li>
+            </ul>
+        </li>
+
+        <li>JavaScript
+            <ul>
+                <li>ვებ პროგრამირება</li>
+                <li>ინტერაქტიული საიტები</li>
+                <li>Front-End და Back-End</li>
+            </ul>
+        </li>
+
+        <li>C++
+            <ul>
+                <li>მაღალი წარმადობა</li>
+                <li>Game development</li>
+                <li>Low-level კონტროლი</li>
+            </ul>
+        </li>
+
+        <li>Java
+            <ul>
+                <li>Cross-platform</li>
+                <li>დიდი პროექტები</li>
+                <li>სტაბილურობა</li>
+            </ul>
+        </li>
+
+        <li>C#
+            <ul>
+                <li>Unity game engine</li>
+                <li>.NET პლატფორმა</li>
+                <li>მარტივი გამოყენება</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>
