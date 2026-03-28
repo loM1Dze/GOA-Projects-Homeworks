@@ -1,0 +1,54 @@
+<!-- 7) შექმენით დალაგებული სია რაიმე რეცეპტის ინსტრუქციის შესახებ, სადაც გამოიყენებთ ერთ ხაზში ჩაწერილ შემოკლებულ shorthand კუთვნილებას ნუმერაციის ტიპის და მდებარეობის ერთდროულად განსასაზღვრად, და სიას დაუმატეთ ტექსტის ფერი, უკანა ფონის ფერი, ტექსტის ზომა, კალიგრაფია და hover და active ფსევდო-სელექტორები. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>რეცეპტის ინსტრუქცია</title>
+
+    <style>
+        ol {
+            list-style: decimal inside;
+            color: #ffffff;
+            background-color: #8e44ad;
+            font-size: 18px;
+            font-family: "Courier New", cursive;
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 5px;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            background-color: #9b59b6;
+            cursor: pointer;
+        }
+
+        li:active {
+            background-color: #5e3370;
+            transform: scale(0.98);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ol>
+        <li>გააცხელეთ ტაფა საშუალო ცეცხლზე</li>
+        <li>დაასხით ზეთი და დაელოდეთ გათბობას</li>
+        <li>დაუმატეთ დაჭრილი ხახვი და მოშუშეთ</li>
+        <li>ჩაყარეთ ხორცი და შეწვით</li>
+        <li>დაამატეთ სუნელები გემოვნებით</li>
+        <li>დატოვეთ დაბალ ცეცხლზე 15 წუთი</li>
+    </ol>
+
+</body>
+
+</html>

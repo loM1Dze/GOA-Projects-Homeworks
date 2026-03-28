@@ -1,0 +1,69 @@
+<!-- 9) შექმენით დალაგებული სია თქვენი საყვარელი წიგნების შესახებ, სადაც თითოეული წიგნის ქვეშ იქნება დაულაგებელი სია თავების შესახებ, და ორივე სიას გაუწერეთ ერთ ხაზში list-style კუთვნილება ისე, რომ დალაგებულ სიაში გამოიყენოთ upper-roman inside და ქვე-სიაში გამოიყენოთ square outside, ასევე ორივე სიას დაუმატეთ საზღვარი, ტექსტის ფერი, უკანა ფონის ფერი და კალიგრაფია. -->
+
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>საყვარელი წიგნები</title>
+
+    <style>
+        ol {
+            list-style: upper-roman inside;
+            border: 3px solid #2c3e50;
+            color: #ffffff;
+            background-color: #34495e;
+            font-family: "Georgia", serif;
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        ul {
+            list-style: square outside;
+            border: 2px dashed #7f8c8d;
+            color: #000000;
+            background-color: #ecf0f1;
+            font-family: "Courier New", cursive;
+            margin: 10px 0;
+            padding: 10px 30px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ol>
+        <li>ჰარი პოტერი
+            <ul>
+                <li>თავი 1 - წერილი ჰოგვორტსიდან</li>
+                <li>თავი 2 - დიაგონის ქუჩა</li>
+                <li>თავი 3 - ჰოგვორტსის ექსპრესი</li>
+            </ul>
+        </li>
+
+        <li>მეტრო 2033
+            <ul>
+                <li>თავი 1 - მეტროს ცხოვრება</li>
+                <li>თავი 2 - მოგზაურობა გვირაბებში</li>
+                <li>თავი 3 - უცნობი საფრთხე</li>
+            </ul>
+        </li>
+
+        <li>შერლოკ ჰოლმსი
+            <ul>
+                <li>თავი 1 - მკვლელობის საიდუმლო</li>
+                <li>თავი 2 - გამოძიება</li>
+                <li>თავი 3 - დამნაშავის გამოვლენა</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>

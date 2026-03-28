@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <style>
+        .leaderboard-table {
+            border-collapse: collapse;
+            font-family: sans-serif;
+            width: 400px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .leaderboard-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .leaderboard-table th,
+        .leaderboard-table td {
+            padding: 12px 15px;
+        }
+
+        .leaderboard-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+
+        .leaderboard-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+            background-color: #f3f3f3;
+        }
+
+
+        .leaderboard-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="leaderboard-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Domenic</td>
+                <td>88,110</td>
+                <td>dcode</td>
+            </tr>
+            <tr class="active-row">
+                <td>2</td>
+                <td>Sally</td>
+                <td>72,400</td>
+                <td>Students</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td>52,300</td>
+                <td>dcode</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
