@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-form {
+            width: 300px;
+            box-shadow: 0px 0px 10px rgb(255, 251, 0);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .contact-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ffea00;
+            background-color: #cccccc58;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: rgb(255, 238, 0);
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            border-style: none;
+        }
+
+        .contact-form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="contact-form">
+        <h2>Sign in</h2>
+        <input type="text" name="name" placeholder="user name" required>
+        <input type="password" name="phone" placeholder="password" required>
+        <button type="submit">Log in</button>
+    </form>
+</body>
+
+</html>
