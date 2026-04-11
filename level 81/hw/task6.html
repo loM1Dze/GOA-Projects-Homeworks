@@ -1,0 +1,41 @@
+<!-- 6) შექმენით მშობელი დივი, რომელშიც მოთავსებული 5 შვილი დივი ელემენტები x ღერძზე მარჯვნიდან მარცხნივ განლაგდებიან და განთავსდებიან მშობელი დივის ცენტრში, მშობელ დივს მიანიჭეთ შემდეგი სტილები: სიგანე 450px, სიმაღლე 220px, უკანა ფონის ფერი ღია ყვითელი და წითელი საზღვარი, ხოლო შვილ დივებს გაუწერეთ 13px დაშორება მათ კონტენტსა და საზღვარს შორის, და 40px დაშორება მათ საზღვარსა და სხვა ელემენტებს შორის, ტექსტის ზომა 25px და უკანა ფონის ფერი მწვანე. -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 450px;
+            height: 220px;
+            background-color: lightyellow;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child {
+            padding: 13px;
+            margin: 40px;
+            font-size: 25px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!-- 9) შექმენით მშობელი დივი, რომელშიც მოთავსებული 5 შვილი დივი ელემენტები განლაგდებიან ზემოდან ქვემოთ და განთავსდებიან მშობელი დივის ქვედა ნაწილში, მშობელ დივს მიანიჭეთ შემდეგი კუთვნილებები: სიგანე 300px, სიმაღლე 400px, უკანა ფონის ფერი წითელი და იასამნისფერი საზღვარი, ხოლო შვილ დივებს გაუწერეთ 40px დაშორება მათ კონტენტსა და საზღვარს შორის, და 40px დაშორება მათ საზღვარსა და სხვა ელემენტებს შორის, ტექსტის ზომა 15px და უკანა ფონის ფერი ცისფერი. -->
+
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox 9</title>
+    <style>
+        .parent {
+            width: 300px;
+            height: 400px;
+            background-color: red;
+            border: 1px solid violet;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .child {
+            padding: 40px;
+            margin: 40px;
+            font-size: 15px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+
+</body>
+
+</html>

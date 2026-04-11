@@ -1,0 +1,39 @@
+<!-- 7) შექმენით მშობელი დივი, რომელშიც მოთავსებული 5 შვილი დივი ელემენტები განლაგდება ზემოდან ქვემოთ და განთავსდება მარცხენა მხარეს, მშობელ ელემენტს მიანიჭეთ შემდეგი სტილები: სიგანე 300px, სიმაღლე 350px, უკანა ფონის ფერი ღია ლურჯი და შავი საზღვარი, ხოლო შვილ დივებს გაუწერეთ 20px დაშორება მათ კონტენტსა და საზღვარს შორის, და 20px დაშორება მათ საზღვარსა და სხვა ელემენტებს შორის, ტექსტის ზომა 14px და უკანა ფონის ფერი ნარინჯისფერი. -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .parent {
+            width: 300px;
+            height: 350px;
+            background-color: lightblue;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .child {
+            padding: 20px;
+            margin: 20px;
+            font-size: 14px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+    </div>
+</body>
+
+</html>
