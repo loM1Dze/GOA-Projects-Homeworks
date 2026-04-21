@@ -1,0 +1,78 @@
+<!-- 1)შექმენით ერთი მშობელი ელემენტი ,მიეცით ზომები 700პხ 700პხ,მიეცით ბორდერი
+
+შიგნით შექმენით 5 შვილი ელემენტი მიეცით ზომები 100პხ 100პხ და უკანა ფონის ფერი,ჩაწერეთ შიგნით რიცხვები 1 2 3 4 5
+
+შენი დავალებაა--
+პირველ რიგში მთლიანი მშობელი ელემენტი ანუ ფერენთი გადმოიტანე body ის ცენტრში ორივე ღერძზე(ბოდის დაუწერეთ სიმაღლე 100vh)
+
+შემდეგ ამ მშობელ ელემენტში მყოფი ელემენტებიც ანუ ჩაილდებიც გადმოიტანეთ ცენტრში ორივვე ღერძზე დააშორე ერთმანეთს 10px ით
+
+პირველ მესამე და მეხუთე დივს გაუწერეთ id ები
+
+პირველი დივი -- უნდა დაიკავოს დარჩენილი ადგილი
+
+მესამე დივი -- მიანჭეთ ახალი სიგანე 200px
+
+მეხუთე დივი -- საიტის დაპატარავებასთან ერთად უფრო მეტად უნდაშეიკუმშოს ვიდრეს სხვა დანარჩენი ელემენტები -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .parent {
+            width: 700px;
+            height: 700px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .parent div {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #one {
+            flex-grow: 1;
+        }
+
+        #three {
+            flex-basis: 200px;
+        }
+
+        #five {
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div id="one">1</div>
+        <div>2</div>
+        <div id="three">3</div>
+        <div>4</div>
+        <div id="five">5</div>
+    </div>
+</body>
+
+</html>
