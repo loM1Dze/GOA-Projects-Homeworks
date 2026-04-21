@@ -1,0 +1,69 @@
+<!-- 12) შექმენით ქვემოთ მოცემული ფოტოს ანალოგი ფორმა გამოიყენეთ flex და ნასწავლი მასალა -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bg {
+            background: #45c0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .login-box {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-box h2 {
+            color: #45c0e0;
+            margin-bottom: 20px;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            outline: none;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background: #45c0e0;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="login-box">
+            <h2>Login To Your Account</h2>
+
+            <input type="text" placeholder="Username" />
+            <input type="password" placeholder="Password" />
+
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!-- 14)შექმენი კონტეინერი, სადაც არის 8 ბლოკი (div).
+კონტეინერის სიგანე იყოს 400px.
+ბლოკების სიგანე იყოს 120px.
+გააკეთე ისე, რომ ელემენტები გადავიდნენ ახალ ხაზზე საჭიროების შემთხვევაში. -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Wrap Task</title>
+
+    <style>
+        .container {
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background: lightgray;
+            padding: 10px;
+        }
+
+        .box {
+            width: 120px;
+            height: 80px;
+            background: steelblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+
+</body>
+
+</html>

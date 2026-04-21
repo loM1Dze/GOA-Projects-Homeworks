@@ -1,0 +1,66 @@
+<!-- 18)გაქვს flex კონტეინერი (height: 400px) 4 ელემენტით.
+
+მოაწყე ისე, რომ:
+
+პირველი ელემენტი იყოს ქვემოთ
+მეორე ელემენტი იყოს ზემოთ
+მესამე ელემენტი იყოს ცენტრში
+მეოთხე დარჩეს default პოზიციაზე
+
+გამოიყენე align-self თითოეულზე ინდივიდუალურად -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Align Self 4 Items</title>
+
+    <style>
+        .container {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f0f0f0;
+            padding: 10px;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background: steelblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:nth-child(1) {
+            align-self: flex-end;
+        }
+
+        .box:nth-child(2) {
+            align-self: flex-start;
+        }
+
+        .box:nth-child(3) {
+            align-self: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+</body>
+
+</html>

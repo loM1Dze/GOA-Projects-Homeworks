@@ -1,0 +1,37 @@
+<!-- 9)შექმენით მშობელი ელემენტი მიეცით ზომები და ფერი,შენი დავალებაა ამ მშობელ ელემენტშ ჩჩაამატო  4 ფოტო რომლებიც  განლაგებულნი იქნებიან ვერტიკალურად ,  იქნებიან სრულიად მშობელი ელემენტის ცენტრში და დააშორე ეს ფოტოები ერთმანეთს 40px ით -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        width: 500px;
+        height: 500px;
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        }
+
+        .container img {
+        width: 80px;
+        height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img1.jpg" />
+        <img src="img2.jpg" />
+        <img src="img3.jpg" />
+        <img src="img4.jpg" />
+    </div>
+</body>
+
+</html>

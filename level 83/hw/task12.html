@@ -1,0 +1,52 @@
+<!-- 17)გაქვს კონტეინერი (height: 300px).
+შიგნით არის 3 div.
+
+ყველა ელემენტი დალაგებულია align-items: center-ით
+მაგრამ მეორე div უნდა გადავიდეს ზემოთ (container-ის დასაწყისში)
+
+გამოიყენე მხოლოდ align-self -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+
+    <style>
+        .container {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f0f0f0;
+            padding: 10px;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background: steelblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:nth-child(2) {
+            align-self: flex-start;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+
+</html>
