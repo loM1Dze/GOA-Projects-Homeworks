@@ -1,0 +1,44 @@
+<!-- 10)გაქვს flex container პატარა ზომით მაგ 400px და შიგნით რამდენიმე ელემენტი.
+
+ელემენტებს აქვს დიდი flex-basis (მაგ: 300px) თითოეულს
+
+გააკეთე ისე, რომ:
+
+ელემენტები არ შემცირდნენ საერთოდ ანუ არ შეიკუმშნონ
+და გადავიდნენ ახალ ხაზზე ეკრანის შემიცირებასთან ერთად(შეიფუთნონ) -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+            border: 2px solid black;
+        }
+
+        .box {
+            flex-basis: 300px;
+            flex-shrink: 0;
+            height: 100px;
+            margin: 5px;
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+
+</html>

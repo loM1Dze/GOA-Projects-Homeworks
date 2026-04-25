@@ -1,0 +1,74 @@
+<!-- 7)კომენტარის სახით ახსენით თუ რა არის flex-shrink ,რა მნშნველობები გადაეცემა მას და რა განსხვავებააა მათ შორის -->
+<!-- 
+flex-shrink განსაზღვრავს რამდენად შემცირდეს ელემენტი
+
+იღებს რიცხვებს: 0, 1, 2, 3...
+
+მნიშვნელობები:
+0 → ელემენტი არ შემცირდება
+1 → სტანდარტული მნიშვნელობა (ნორმალურად მცირდება)
+2+ → სხვებთან შედარებით უფრო მეტად შემცირდება -->
+
+
+
+<!-- 8)გაქვს flex container (width: 400px) და 3 ელემენტი.
+
+თითოეულს აქვს flex-basis: 200px
+
+გააკეთე ისე, რომ:
+
+მხოლოდ მეორე ელემენტი არ შემცირდეს
+
+დანარჩენები კი შემცირდნენ ეკრანის დაპატარავებასთან ერთად -->
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 400px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            flex-basis: 200px;
+            flex-shrink: 1;
+            height: 100px;
+            background: red;
+            margin: 5px;
+        }
+
+        .box2 {
+            flex-basis: 200px;
+            flex-shrink: 0;
+            height: 100px;
+            background: green;
+            margin: 5px;
+        }
+
+        .box3 {
+            flex-basis: 200px;
+            flex-shrink: 1;
+            height: 100px;
+            background: blue;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+
+</body>
+
+</html>

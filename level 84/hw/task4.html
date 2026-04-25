@@ -1,0 +1,53 @@
+<!-- 5)გაქვს flex container და 3 ელემენტი.
+
+ყველა ელემენტს დაუყენე საწყისი ზომა 150px
+
+მაგრამ არ გამოიყენო width
+
+გამოიყენე მხოლოდ flex-basis სამივე მათგანზე ცალ ცალკე -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            flex-basis: 150px;
+            background: red;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .box2 {
+            flex-basis: 150px;
+            background: green;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .box3 {
+            flex-basis: 150px;
+            background: blue;
+            height: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+
+</body>
+
+</html>
