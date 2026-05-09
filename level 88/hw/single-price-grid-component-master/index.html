@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: hsl(204, 43%, 93%);
+      font-family: 'Karla', sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      width: 675px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .top {
+      background: white;
+      padding: 35px;
+    }
+
+    .top h1 {
+      color: hsl(179, 62%, 43%);
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    .top h2 {
+      color: hsl(71, 73%, 54%);
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .top p {
+      color: hsl(218, 22%, 67%);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .bottom {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .subscription {
+      flex: 1;
+      background: hsl(179, 62%, 43%);
+      color: rgba(255, 255, 255, 0.7);
+      padding: 35px;
+    }
+
+    .subscription h3 {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .price-box {
+      display: flex;
+      gap: 10px;
+    }
+
+    .price {
+      font-size: 33px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .month {
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 15px;
+    }
+
+    .subscription p {
+      margin-top: 10px;
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      background: hsl(71, 73%, 54%);
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .why {
+      flex: 1;
+      background: hsl(179, 47%, 52%);
+      color: white;
+      padding: 45px;
+    }
+
+    .why h3 {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .why p {
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="top">
+      <h1>Join our community</h1>
+
+      <h2>30-day, hassle-free money back guarantee</h2>
+
+      <p>
+        Gain access to our full library of tutorials along with expert code
+        reviews.<br> Perfect for any developers who are serious about honing their
+        skills.
+      </p>
+    </div>
+
+    <div class="bottom">
+
+      <div class="subscription">
+        <h3>Monthly Subscription</h3>
+
+        <div class="price-box">
+          <div class="price" style="color: white;">$29</div>
+          <div class="month">per month</div>
+        </div>
+
+        <p>Full access for less than $1 a day</p>
+
+        <button>Sign Up</button>
+      </div>
+
+      <div class="why">
+        <h3>Why Us</h3>
+
+        <p>
+          Tutorials by industry experts<br>
+          Peer & expert code review<br>
+          Coding exercises<br>
+          Access to our GitHub repos<br>
+          Community forum<br>
+          Flashcard decks<br>
+          New videos every week
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
