@@ -1,0 +1,91 @@
+<!-- 1)კომენტარის სახით ახსენით დღეს ნასწავლი სამივე პოზიციის კუთვნილება და დეტალიურად ახსენით რა ხდება თითოეულის გამოყენების დროს -->
+
+<!-- css - ში გვაქვს 3 პოზიციის კუთვნილება
+
+პირველი კუთვნილება - static
+სტატიკური პოზიცია არის default ჩვეულებრივი პოზიცია შემდეგი კუთვნილებებით -- top, bottom, right, left
+ჩვენ ვერ შევცვლით მდებარეობას რომც მივუთითოთ რომელიმე კუთვნილება რადგან არგვაქვს წვდომა
+
+მეორე კუთვნილება - relative
+რელატიური პოზიციაზე გვაქვს წვდომა შემდეგ კუთვნილებებზე -- top, bottom, right, left.
+კუთვნილებების საშვალებით ვამოძრავებთ ელემენტს
+
+მესამე კუთვნილება - absolute
+აბსოლუტის შემთხვევაშიც ვიღებთ წვდომას შემდეგ კუთვნილებებზე -- top, bottom, right, left.
+მაგრამ გამოყენების შემთხვევაში ის ვარდება განლაგებიდან ისე რომ სხვა ელემენტებს არ აქვთ წარმოდგენა ამ ელემენტის შესახებ -->
+
+
+<!-- 2)გაქვს 3 ბლოკი:
+
+<div class="box red"></div>
+<div class="box green"></div>
+<div class="box blue"></div>
+დავალება:
+
+ყველა იყოს რიგში(row) 
+მწვანე დივვი გადაადგილე:
+მარჯვნივ 30px
+ქვემოთ 20px
+ისე რომ არ ამოვარდეს განლაგებიდან და ქიდან დაიწყოს მოძრაობა სადაც ის არის -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green {
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+
+</html>
+
+<!-- 3)შექმენი 2 box:
+
+პირველი — ჩვეულებრივი (static)
+მეორე — relative
+
+relative box გადაადგილე მარცხნივ - 40px
+
+კითხვა:
+რა განსხვავებაა ამ ორს შორის ვიზუალურად და layout-ში? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            position: static;
+        }
+
+        .green {
+            position: relative;
+            right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+</body>
+
+</html>
+
+<!-- სტატიკური თავის ჩვეულებრივ საწყის პოზიციაშია და რელატივი სტატიკურთან შედარებით 40 პიქსელით მარცხნივ -->
+
