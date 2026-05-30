@@ -1,0 +1,67 @@
+<!-- 7)შექმენი პროფილის ბარათი.
+პროფილის ფოტოს კუთხეში პატარა მწვანე წერტილი დაამატე, რომელიც ნიშნავს "online" სტატუსს.
+გამოიყენე:
+parent → relative
+status → absolute -->
+
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            background: #f2f2f2;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .avatar {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+        }
+
+        .avatar img {
+            border-radius: 50%;
+        }
+
+        .status {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: green;
+            border-radius: 50%;
+            bottom: 5px;
+            right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="avatar">
+            <img src="https://via.placeholder.com/100" alt="online">
+            <div class="status"></div>
+        </div>
+        <h3>Giga</h3>
+        <p>Online</p>
+    </div>
+
+</body>
+
+</html>

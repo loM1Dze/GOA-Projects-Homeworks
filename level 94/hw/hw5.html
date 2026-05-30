@@ -1,0 +1,52 @@
+<!-- 6)შექმენი ნავბარი position: sticky; გამოყენებით.
+როცა მომხმარებელი დასქროლავს, ნავბარი ზედა ნაწილში “მიეკრას”. -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Nav</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 2000px;
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            background: #222;
+            padding: 15px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .con {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="con">
+        <h1>Scroll down</h1>
+        <p>Navbar will stick to the top when you scroll</p>
+    </div>
+
+</body>
+
+</html>
