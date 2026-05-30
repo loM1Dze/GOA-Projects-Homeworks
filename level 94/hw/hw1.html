@@ -1,0 +1,46 @@
+<!-- 2)შექმენი ბარათი (card div), სადაც სურათის კუთხეში გამოჩნდება "SALE" ტექსტი.
+გამოიყენე: -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card Sale</title>
+    <style>
+        .card {
+            width: 300px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .sale {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <span class="sale">SALE</span>
+
+        <img src="https://imgs.search.brave.com/5Qs8Kcg4mLZAsgMgLBbUC-LdhyfQ5VGmmKmkXQWxYtA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy8yMDIy/LWJtdy1tNS1jcy0x/MTktMTYxMTY4NDEy/NS5qcGc_Y3JvcD0w/Ljg4NHh3OjAuODEx/eGg7MCwwLjE4NHho/JnJlc2l6ZT05ODA6/Kg"
+            alt="Product Image">
+    </div>
+
+</body>
+
+</html>

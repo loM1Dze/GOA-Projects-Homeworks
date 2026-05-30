@@ -1,0 +1,66 @@
+<!-- 5)შექმენი დიდი კონტეინერი position: relative;-ით.
+შიგნით განათავსე 4 პატარა ბლოკი absolute პოზიციებით:
+ზედა მარცხენა
+ზედა მარჯვენა
+ქვედა მარცხენა
+ქვედა მარჯვენა -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: lightgray;
+            position: relative;
+            margin: auto;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+            background-color: blue;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            background-color: green;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box top-left"></div>
+        <div class="box top-right"></div>
+        <div class="box bottom-left"></div>
+        <div class="box bottom-right"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!-- 3)შექმენი ვებსაიტზე  ნავიგაციის მენიუ position: fixed; გამოყენებით ისე, რომ სქროლვის დროს ყოველთვის ზედა ნაწილში დარჩეს. -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            padding: 15px 0;
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .cont {
+            padding-top: 80px;
+        }
+
+        .sect {
+            height: 1000px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cont">
+        <div class="sect">
+            <h1>Content</h1>
+            <p>Scroll down and the menu will stay</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
