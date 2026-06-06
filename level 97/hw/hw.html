@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Positions and z-index</title>
+
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background: #eee;
+            position: relative;
+        }
+
+        .b1 {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+        }
+
+        .purple {
+            background: purple;
+            top: 20px;
+            left: 30px;
+            z-index: 2;
+        }
+
+        .green {
+            background: green;
+            top: 120px;
+            left: 60px;
+            z-index: 1;
+        }
+
+        .cyan {
+            background: cyan;
+            top: 56px;
+            left: 120px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="b1 purple"></div>
+        <div class="b1 green"></div>
+        <div class="b1 cyan"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!-- 8)შექმენი დივი რომელშიც ჩასვავ ბგ იმიჯს რომელიც არ მეორდება და არის ცენტრში და დაფარავს დივს , შიგნით ამ დივში ჩასვი კიდევ ერთი დივი და ამ დივსაც მიეცი სხვა bg იმიჯი,გასტილე როგორც გინდა -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer {
+            width: 500px;
+            height: 400px;
+
+            background-image: url("https://imgs.search.brave.com/s1tE38KwAKo9nrbSVdZOSG1R2hMqtHKQF2Qv0RtiZ0E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY2xhc3NpYy5j/b20vdmVoaWNsZXMv/ZTE4NDY2YjBjN2Ix/ZDI2YTkwYTI5ZTEy/YzRjYjVlZDcuanBl/Zz9hcj0xNjo5JmZp/dD1jcm9wJmg9MzM4/Jnc9NjAw");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner {
+            width: 200px;
+            height: 150px;
+
+            background-image: url("https://imgs.search.brave.com/s1tE38KwAKo9nrbSVdZOSG1R2hMqtHKQF2Qv0RtiZ0E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY2xhc3NpYy5j/b20vdmVoaWNsZXMv/ZTE4NDY2YjBjN2Ix/ZDI2YTkwYTI5ZTEy/YzRjYjVlZDcuanBl/Zz9hcj0xNjo5JmZp/dD1jcm9wJmg9MzM4/Jnc9NjAw");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+</body>
+
+</html>
