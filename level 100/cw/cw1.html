@@ -1,0 +1,48 @@
+<!-- 2)შექმენით ერთი დივი 150 x 150,  წითელი ფერის
+
+შენი დავალებაა რომ დივმა --
+
+შეიცვალოს ფერი და გახდეს ლურჯი 2 წამში
+
+დატრიალდეს 400deg ით 5 წამში
+გახდეს მრგვალი 2.5 წამში
+
+ჩამოვიდეს ქვემოთ 100px ით და გავიდეს გვერდით 70px ით 1 წამში(transforms)
+
+ქვემოთ გაუჩნდეს შავი ჩრდილი 6 წამში
+
+-=====
+
+სიჩქარე ქონდეს ისეთი რომ ქონდეს ნელი სტარტი და შემდეგ ჩქარებდოეს
+
+დილეი ქონდეს 2 წამი -->
+
+
+<html>
+
+<head>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition: background 2s ease-in, transform 1s ease-in, rotate 2.5s ease-in, box-shadow 6s ease-in, border-radius 1s ease-in;
+            transition-delay: 2s;
+        }
+
+        .box:hover {
+            background: blue;
+            transform: translate(70px, 100px) rotate(400deg) ;
+            border-radius: 50%;
+            box-shadow: 0px 20px 30px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>
