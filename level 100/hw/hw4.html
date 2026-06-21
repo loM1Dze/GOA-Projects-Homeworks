@@ -1,0 +1,60 @@
+<!-- 5)შექმენი Progress Bar:
+
+ღილაკზე დაჭერისას ან კლასის დამატებისას
+პროგრესი 0%-დან 100%-მდე ავიდეს.
+გამოიყენე მხოლოდ transition.(დასერჩერაარის პროგრეს ბარი)
+
+სიჩქარე ქონდეს: ნელი დასასრული
+
+ასევე ქონდეს დილეი თაქვიდან 2 წამი -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            margin: 0;
+        }
+
+        .bar {
+            width: 300px;
+            height: 20px;
+            background: gray;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .fill {
+            width: 0%;
+            height: 100%;
+            background: limegreen;
+
+            transition: width 2s ease-out;
+            transition-delay: 2s;
+        }
+
+        .bar:hover .fill {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bar">
+        <div class="fill"></div>
+    </div>
+
+    <p style="color: white;">Hover the bar</p>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!-- 3)შექმენი პროფილის ბარათი:
+
+ფოტოს მაუსის მიტანისას ზომა გაეზარდოს.
+სახელი ფერს იცვლიდეს.
+ბარათს ემატებოდეს ჩრდილი.
+ყველა ეფექტი სხვადასხვა სიჩქარით მოხდეს.
+
+ქონდეს ერთნაირი სიჩქარე -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Profile Card</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: gray;
+        }
+
+        .card {
+            width: 260px;
+            padding: 25px;
+            border-radius: 15px;
+            background: gray;
+            text-align: center;
+            color: white;
+
+            transition: box-shadow 0.6s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .card img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .name {
+            margin-top: 12px;
+            font-size: 20px;
+            transition: color 1s ease;
+        }
+
+        .card:hover .name {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="https://imgs.search.brave.com/gBmX_Swu_7AKlO5A4b1B3Rm5XBql9MdSFqJX6tUruXw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/Ym13LW01LWY5MC12/MC10NjAyMXVqYWpv/ZWcxLnBuZz93aWR0/aD02NDAmY3JvcD1z/bWFydCZhdXRvPXdl/YnAmcz0zZWMzZGYy/YzVhZmFhMjVmMGU2/NjhhOGY2ODVlYzFi/N2RkMGY5ZWVm"
+            alt="profile">
+        <div class="name">User</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!-- 7)შექმენი ბლოკი, რომელშიც დამატებითი ინფორმაცია თავიდან დამალულია.
+hover-ისას:
+
+ბლოკი გაფართოვდეს.
+ტექსტი ნელ-ნელა გამოჩნდეს.
+ფონი -->
+
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <style>
+        body {
+            height: 100vh;
+            background: #ffffff;
+            margin: 0;
+        }
+
+        .box {
+            width: 250px;
+            height: 120px;
+            background: #1e293b;
+            color: white;
+            padding: 15px;
+
+
+            transition: height 0.6s ease-out, background 0.6s ease-out;
+        }
+
+        .extra {
+            opacity: 0;
+
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .box:hover {
+            height: 220px;
+            background: #334155;
+        }
+
+        .box:hover .extra {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h3>Title</h3>
+        <p>info...</p>
+
+        <div class="extra">
+            <p>hidden information</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

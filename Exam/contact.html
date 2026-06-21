@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>კონტაქტი</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", "Roboto", sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            padding: 12px;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #00ff88;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 10px;
+            background-color: rgba(0, 128, 0, 0.2);
+            transition: all 0.4s ease;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.1);
+            letter-spacing: 1.3px;
+            text-shadow: 0 0 10px #fff;
+        }
+
+        h1,
+        h2 {
+            color: #00b140;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: black;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 177, 64, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0, 177, 64, 0.5);
+        }
+
+        a {
+            color: #00b140;
+            text-decoration: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border: 2px solid #00b140;
+            border-radius: 8px;
+            background-color: #000;
+            color: white;
+            font-family: inherit;
+            transition: transform 0.3s ease, border 0.3s ease;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: white;
+            transform: scale(1.02);
+        }
+
+        button {
+            background-color: #00b140;
+            color: #000;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #00b140;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            border-top: 2px solid #008531;
+        }
+
+        footer a {
+            margin: 10px;
+            color: #00b140;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="about.html">ჩვენს შესახებ</a></li>
+            <li><a href="services.html">სერვისები</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>კონტაქტი</h1>
+
+        <section>
+            <h2>დაგვიკავშირდით</h2>
+            <p>ტელ: <a href="tel:+995555123456">+995 555 12 34 56</a></p>
+            <p>ელ.ფოსტა: <a href="mailto:info@goa.ge">info@goa.ge</a></p>
+            <p>მისამართი: თბილისი, საქართველო</p>
+        </section>
+
+        <section>
+            <h2>მოგვწერეთ ელექტრონულ ფოსტაზე</h2>
+
+            <form>
+                <label for="user-name">სახელი:</label>
+                <input type="text" id="user-name" required>
+
+                <label for="user-email">ელ.ფოსტა:</label>
+                <input type="email" id="user-email" required>
+
+                <label for="user-message">შეტყობინება:</label>
+                <textarea id="user-message" required></textarea>
+
+                <button type="submit">გაგზავნა</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/nika11keshelava/">Facebook</a> |
+        <a href="https://www.instagram.com/goal_oriented_academy__goa/">Instagram</a> |
+        <a href="https://www.youtube.com/@Goal_Oriented_Academy__GOA">Youtube</a>
+        <p>© 2026 Goal-Oriented Academy • GOA Project</p>
+    </footer>
+
+</body>
+
+</html>

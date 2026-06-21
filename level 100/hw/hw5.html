@@ -1,0 +1,59 @@
+<!-- 6)შექმენი 4 სურათის გალერეა.
+ერთ სურათზე hover-ისას:
+
+ეს სურათი გაიზარდოს.
+დანარჩენები დაპატარავდნენ.
+ყველა ცვლილება იყოს smooth(ლამაზი და რბილი).
+
+სიჩქარე ქონდეს: ნელი დასასრული -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            margin: 0;
+        }
+
+        .gallery {  
+            display: flex;
+            gap: 30px;
+        }
+
+        .gallery img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+
+            transition: transform 0.6s ease-out;
+        }
+
+        .gallery:hover img {
+            transform: scale(0.9);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/200?1">
+        <img src="https://picsum.photos/200?2">
+        <img src="https://picsum.photos/200?3">
+        <img src="https://picsum.photos/200?4">
+    </div>
+
+</body>
+
+</html>

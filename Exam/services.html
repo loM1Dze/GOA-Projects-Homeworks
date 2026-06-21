@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>სერვისები</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", "Roboto", sans-serif;
+            background-color: #101010;
+            color: #fff;
+            line-height: 1.6;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            padding: 12px 0;
+            z-index: 1;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #00ff88;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 10px;
+            background-color: rgba(0, 128, 0, 0.2);
+            transition: all 0.4s ease;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.1);
+            letter-spacing: 1.3px;
+            text-shadow: 0 0 10px #fff;
+        }
+
+        h1 {
+            color: #00b140;
+            margin: 30px 0;
+        }
+
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            width: 70%;
+            box-shadow: 0 0 10px rgba(0, 177, 64, 0.3);
+            transition: 0.4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 177, 64, 0.6);
+        }
+
+        .service-card h2 {
+            font-size: 18px;
+            color: #00b140;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="about.html">ჩვენს შესახებ</a></li>
+            <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>სერვისები</h1>
+
+        <section class="services-container">
+            
+            <article class="service-card">
+                <h2>1. ალგორითმები, C++ და ხელოვნური ინტელექტის კურსი</h2>
+                <p>
+                    მენტორი: ბატონი ზურაბ კუჭავა<br>
+                    ხანგრძლივობა: 2 წელი<br>
+                    გაფიკი: კვირაში ორჯერ (ორშაბათი და პარასკევი, 21:00–23:00)<br>
+                    თვიური გადასახადი: 190 ლარი (290 ლარიდან 100 ლარს აფინანსებს GOA)
+                </p>
+            </article>
+
+            <article class="service-card">
+                <h2>2. რობოტიკისა და ელექტრული ინჟინერიის კურსი (Arduino)</h2>
+                <p>
+                    მენტორი: ბატონი გაბრიელ მოლოდინი<br>
+                    ხანგრძლივობა: 1 წელი<br>
+                    გრაფიკი: კვირაში ერთხელ<br>
+                    თვიური გადასახადი: 170 ლარი
+                </p>
+            </article>
+
+            <article class="service-card">
+                <h2>3. თამაშების შექმნის კურსი (Game Development)</h2>
+                <p>
+                    მენტორი: ბატონი ლუკა გურგენიძე<br>
+                    ხანგრძლივობა: 2 წელი<br>
+                    გრაფიკი: კვირაში ერთხელ<br>
+                    თვიური გადასახადი: 170 ლარი
+                </p>
+            </article>
+
+            <article class="service-card">
+                <h2>4. გრაფიკული დიზაინის კურსი</h2>
+                <p>
+                    ხანგრძლივობა: 6 თვე<br>
+                    გრაფიკი: კვირაში ორჯერ<br>
+                    თვიური გადასახადი: 290 ლარი
+                </p>
+            </article>
+
+            <article class="service-card">
+                <h2>5. საბრძოლო ხელოვნებების აკადემია (MMA)</h2>
+                <p>
+                    მდებარეობა: აღმოსავლეთ ევროპის უნივერსიტეტი, სარაჯიშვილის მეტროსთან<br>
+                    თვიური გადასახადი:<br>
+                    6-ჯერ კვირაში: 280 ლარი<br>
+                    5-ჯერ კვირაში: 250 ლარი<br>
+                    4-ჯერ კვირაში: 220 ლარი<br>
+                    3-ჯერ კვირაში: 180 ლარი<br>
+                    2-ჯერ კვირაში: 130 ლარი<br>
+                    1-ჯერ კვირაში: 70 ლარი
+                </p>
+            </article>
+
+            <article class="service-card">
+                <h2>6. მათემატიკის კურსი პროგრამისტებისთვის (ინდივიდუალური)</h2>
+                <p>
+                    მიზანი: ალგორითმული აზროვნების განვითარება<br>
+                    მეცადინეობა: ინდივიდუალური (2, 3 ან 4-ჯერ კვირაში)<br>
+                    ასევე ჩატარდება ჯგუფური მეცადინეობა კვირაში ერთხელ
+                </p>
+            </article>
+
+            <article class="service-card">
+                <h2>7. ტექნიკური/ბიზნეს ინგლისურის კურსი პროგრამისტებისთვის (ინდივიდუალური)</h2>
+                <p>
+                    მიზანი: ტექნიკური ტერმინების, დავალებების პირობების და გრამატიკის ცოდნის გაუმჯობესება<br>
+                    მეცადინეობა: ინდივიდუალური (2, 3 ან 4-ჯერ კვირაში)<br>
+                    ასევე ჩატარდება ჯგუფური მეცადინეობა კვირაში ერთხელ
+                </p>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!-- 2)შექმენი ბარათი, რომლის სიმაღლე თავიდან 150px-ია.
+hover-ისას:
+
+სიმაღლე გახდეს 300px.
+გამოჩნდეს დამალული ტექსტი.
+ტექსტის გამოჩენაც იყოს transition-ით. (მოიძიეთ ინფორმაცია თუ სხვა ელემენტზე დაჰოვერებისას როგორ უნდა ვიმოქმედოთ სხვა ელემენტზე , მაგალითად გვაქ ორი პარაგრაფუ, მაუსს რომ მივიტან პირველთან პირველის ნაცვლად მეორე როგორ შეიცვალოს , დასერჩეთ და მოძიეთ) -->
+
+<html>
+
+<head>
+    <style>
+        .card {
+            width: 300px;
+            height: 150px;
+            background: black;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+
+            transition: height 0.5s ease;
+        }
+
+        .extra {
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .card:hover .extra {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>სათაური</h3>
+        <p>აღწერა</p>
+
+        <div class="extra">
+            <p>hidden</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

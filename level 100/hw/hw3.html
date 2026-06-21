@@ -1,0 +1,65 @@
+<!-- 4)შექმენი პროდუქტის ბარათი:
+
+ღილაკი თავიდან დამალული იყოს.
+hover-ისას ღილაკი ნელ-ნელა გამოჩნდეს.
+სურათი ოდნავ გაიზარდოს.
+ბარათი ზემოთ აიწიოს.
+
+სიჩქარე ქონდეს: ნელი სტარტი ნელი ენდი -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <style>
+        .card {
+            width: 300px;
+            height: 150px;
+            background: black;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+
+            transition: height 0.5s ease-in-out;
+        }
+
+        .card img {
+            height: 30px;
+            width: 30px;
+
+            transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+        }
+
+        .card:hover img {
+            width: 45px;
+            height: 45px;
+
+        }
+
+        .btn {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .card:hover .btn {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="https://imgs.search.brave.com/7d4Rf1B_OolKaHR6tITgebzl2VO7zSu4sdPYNa1dmzA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS81/ZWUwYTAxYjA5Mzg5/ZWViZjRjMDliNDUv/NjVlNjA3ZTBjNjNh/NzVkNjAzYjc3NWFk/X1JlY3RhbmdsZSUy/MDk5Mi53ZWJw"
+            alt="product">
+
+        <h3>Product</h3>
+        <p>description</p>
+
+        <button class="btn">Buy Now</button>
+    </div>
+
+</body>
+
+</html>

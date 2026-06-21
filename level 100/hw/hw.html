@@ -1,0 +1,43 @@
+<!-- 1)შექმენი ღილაკი, რომელიც hover-ისას:
+
+იზრდება 1.2-ჯერ.
+ფონს იცვლის.
+ტექსტის ფერს იცვლის.
+ემატება box-shadow.
+ყველა თვისებას განსხვავებული duration ჰქონდეს. -->
+
+<html>
+
+<head>
+    <style>
+        button {
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+
+            transition:
+                transform 0.3s ease,
+                background-color 0.5s ease,
+                color 0.7s ease,
+                box-shadow 1s ease;
+        }
+
+        button:hover {
+            transform: scale(1.2);
+            background-color: red;
+            color: yellow;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>opsec</button>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!-- 9)შექმენი Navigation Menu.
+hover-ისას:
+
+ლინკი გაიზარდოს.
+შეიცვალოს ფერი.
+ასოებს შორის დაშორება (letter-spacing) გაიზარდოს. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <style>
+        body {
+            margin: 0;
+            background: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+
+            transition: transform 0.4s ease-out,
+                color 0.4s ease-out,
+                letter-spacing 0.4s ease-out;
+        }
+
+        nav a:hover {
+            transform: scale(1.2);
+            color: #f1c40f;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</body>
+
+</html>

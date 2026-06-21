@@ -1,0 +1,77 @@
+<!-- 8)შექმენი სამი წრე (წითელი, ყვითელი, მწვანე).
+მაუსის მიტანისას:
+
+შესაბამისი ფერი უფრო კაშკაშა(ჩრდილი) გახდეს.
+გამოიყენე transition.
+
+დილეი ქონდეს 0.5 წამი და სიჩქარე : ერთნაირი  -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0f172a;
+            margin: 0;
+        }
+
+        .lights {
+            display: flex;
+            gap: 20px;
+        }
+
+        .circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+
+            transition: box-shadow 0.6s ease, transform 0.6s ease;
+            transition-delay: 0.5s;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .green {
+            background: green;
+        }
+
+        .circle:hover {
+            transform: scale(1.2);
+        }
+
+        .red:hover {
+            box-shadow: 0 0 20px red;
+        }
+
+        .yellow:hover {
+            box-shadow: 0 0 20px yellow;
+        }
+
+        .green:hover {
+            box-shadow: 0 0 20px green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="lights">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+    </div>
+
+</body>
+
+</html>
