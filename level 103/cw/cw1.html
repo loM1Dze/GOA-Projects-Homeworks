@@ -1,0 +1,68 @@
+<!-- 2)შექმენით დივი როგორც ზემოთ დავალებაში
+
+შეუცვალეთ ფერი , ჩამოწიეთ მხოლოდ ქვემოთ
+
+დაატრიალეთ 90 გრადუსით
+
+მოამრგვალეთ კუთხეები 50პხ ით
+
+გაზარდეთ ზომაში scale
+
+,ანიმაციას ქონდეს ნელი დასასრული
+
+მოხდეს 5 ჯერ 
+
+ხანგრძლივობა ქონდეს 3 წამი
+
+დილეი ქონდეს 2 წამი
+
+ანიმაცია რომმმორჩება საწყის სტილებს აღარ დაუბრუნდეს -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        .animated-box {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            animation-name: move;
+            transform-origin: top right;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 5;
+            animation-delay: 2s;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(0);
+                background-color: blue;
+                width: 150px;
+                height: 150px;
+                border-radius: 0%;
+            }
+
+            100% {
+                transform: translateY(200px) rotate(90deg) scale(1.1);
+                background-color: purple;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="animated-box"></div>
+    </div>
+</body>
+
+</html>

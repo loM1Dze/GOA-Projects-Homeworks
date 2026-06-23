@@ -1,0 +1,58 @@
+<!-- 1)შექმენთ დივი რომელსაც ექნება ზომა 150px x 150px ლურჯი ფერის
+
+შენი დავაელაბაა შექმნა ანიმაცია რომელიც:
+
+დივს გაწევს ქვევით 100პხ ით და გვერდით გაწევს 200პხ ით
+
+შეუცვლის ფერს იასამნისფერში
+
+გაზრდის ზომაში სიგანესაც და სიმაღლესაც 50პხ ით
+
+დაატრიალებს 360დეგ ით(ტრიალის ღერძი ქონდეს ზემოთ მარჯვენა კუთხე)
+
+მოუმრგვალდეს კუთხეები 40% ით -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        .animated-box {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            animation-name: move;
+            transform-origin: top right;
+            animation-duration: 4s;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+                background-color: blue;
+                width: 150px;
+                height: 150px;
+            }
+
+            100% {
+                transform: translate(200px, 100px) rotate(360deg);
+                background-color: purple;
+                width: 200px;
+                height: 200px;
+                border-radius: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="animated-box"></div>
+    </div>
+</body>
+
+</html>
