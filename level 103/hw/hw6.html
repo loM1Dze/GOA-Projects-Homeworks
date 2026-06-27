@@ -1,0 +1,48 @@
+<!-- 7)შექმენი ყვითელი წრე.
+
+იწყებს ქვემოდან.
+ანიმაციის ბოლოს გადავიდეს 250px-ით ზემოთ.
+ფერი შეიცვალოს ნარინჯისფერზე.
+ხანგრძლივობა: 4s
+დასრულების შემდეგ დარჩეს ბოლო მდგომარეობაში. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+
+            animation-name: moveUp;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes moveUp {
+            from {
+                transform: translateY(250);
+                background-color: yellow;
+            }
+
+            to {
+                transform: translateY(-250px);
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>

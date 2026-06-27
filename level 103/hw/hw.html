@@ -1,0 +1,52 @@
+<!-- 1). მოძრავი კვადრატი
+
+შექმენი 100x100px კვადრატი.
+
+თავიდან იყოს მარცხნივ.
+ანიმაციის ბოლოს გადავიდეს 500px-ით მარჯვნივ.
+ხანგრძლივობა: 3s
+iteration-count: infinite
+timing-function: linear -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .moving-square {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+
+            animation-name: move;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="moving-square"></div>
+
+</body>
+
+</html>

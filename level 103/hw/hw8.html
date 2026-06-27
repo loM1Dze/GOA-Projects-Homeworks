@@ -1,0 +1,51 @@
+<!-- 9)შექმენი div, რომელიც:
+
+თავიდან არის პატარა (scale(0.5))
+ბოლოში იზრდება (scale(1.5))
+ამავდროულად ადის 500px-ით ზემოთ.
+ფერი იცვლება თეთრიდან წითელზე.
+ხანგრძლივობა: 3s
+ease-in
+უსასრულო გამეორება. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+
+            animation-name: growAndUp;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes growAndUp {
+            from {
+                transform: scale(0.5) translateY(0);
+                background-color: white;
+            }
+
+            to {
+                transform: scale(1.5) translateY(-500px);
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!-- 2)2. ფერის შეცვლა
+
+შექმენი წრე, რომელიც:
+
+იწყებს წითელი ფერით.
+მთავრდება ლურჯი ფერით.
+ანიმაცია გაგრძელდეს 2s.
+დასრულების შემდეგ დარჩეს ლურჯი -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .changing-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+            animation-name: changeColor;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes changeColor {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="changing-circle"></div>
+
+</body>
+
+</html>

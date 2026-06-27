@@ -1,0 +1,42 @@
+<!-- 4)შექმენი ღილაკი, რომელიც:
+
+იწყებს scale(1) ზომით.
+ბოლოში ხდება scale(1.3).
+ანიმაცია მეორდება უსასრულოდ.
+მოძრაობა იყოს ease-in-out. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            transform: scale(1);
+            animation-name: pulse;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>Click Me</button>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!-- 10)10. Magic Box
+
+შექმენი კვადრატი, რომელიც:
+
+თავიდან არის 100×100px.
+ბოლოში ხდება 200×200px.
+ფერი იცვლება მწვანედან იისფერზე.
+ბრუნდება rotate(360deg).
+ხანგრძლივობა: 2s.
+იწყება 1 წამის შემდეგ.
+სრულდება და რჩება ბოლო მდგომარეობაში. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            animation-name: magic;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes magic {
+            from {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                transform: rotate(0deg);
+            }
+
+            to {
+                width: 200px;
+                height: 200px;
+                background-color: purple;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>

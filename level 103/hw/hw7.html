@@ -1,0 +1,45 @@
+<!-- 8)შექმენი div:
+
+საწყისი სიგანე: 0px
+საბოლოო სიგანე: 400px
+ხანგრძლივობა: 5s
+ანიმაცია დაიწყოს 1 წამის შემდეგ.
+დასრულების შემდეგ სიგანე აღარ შეიცვალოს. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 50px;
+            background-color: green;
+
+            animation-name: stretch;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes stretch {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>

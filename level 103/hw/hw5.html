@@ -1,0 +1,47 @@
+<!-- 6)შექმენი დივი.
+
+იწყებს ეკრანის მარცხენა მხარეს.
+ბოლოში მიდის მარჯვენა მხარეს.
+ანიმაცია იწყება 3 წამის შემდეგ.
+მოძრაობა იყოს თანაბარი (linear).
+განმეორდეს 5-ჯერ. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+            animation-name: move;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(1500px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>
