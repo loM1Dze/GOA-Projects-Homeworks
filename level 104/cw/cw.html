@@ -1,0 +1,58 @@
+<!-- 1)შექმენი წრე რომელიც იქნება ყვითელი ფერის
+
+შენი ავალებაა რომ ეს მზე გავიდეს მარჯვენა მხარეს და ბოლოს გახდეს ლურჯი ფერის ასევე ზომაშიც გაიზარდოს scale 1,5
+
+შემდეგ უკან ისევ ლამაზად დაბრუნდეს 
+
+ხანგრძლივობა ქონდეს 4 წამი
+
+ანიმაცია დაიწყოს 2 წამის შემდეგ
+
+ქონდეს ერთნაირი სიჩქარე
+
+განმეორდეს 5 ჯერ 
+
+გამოიყენეთ შემოკლებული გზა ამ დავალების შესასრულებლად -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>მზის ანიმაცია</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+
+        .sun {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+
+            animation: move 4s linear 2s 5 alternate;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0px) scale(1) ;
+                background-color: yellow;
+            }
+
+            100% {
+                transform: translateX(1400px) scale(1.5) ;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sun"></div>
+
+</body>
+
+</html>

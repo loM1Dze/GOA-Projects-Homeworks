@@ -1,0 +1,81 @@
+<!-- 2)შექმენით დივი რომელიც იქნება მწვანე ფერის
+
+შენი დავალებაა 
+
+1)დივს მოუმრგვალდეს კთხეები 10პხ , შეიცვალოს ფერი ყვითელი , გაიზარდოს scale 1.2 დატრიალდეს 20deg
+
+2)დივს მოუმრგვალდეს კთხეები 20პხ , შეიცვალოს ფერი წითელი , გაიზარდოს scale 1.5 დატრიალდეს 50deg , ჩამოვიდეს ქვევით 100px
+
+3)დივს მოუმრგვალდეს კთხეები 50პხ , შეიცვალოს ფერი ლურჯი , გაიზარდოს scale 2 დატრიალდეს 140deg , ჩამოვიდეს ქვევით 200px
+
+4)დივს მოუმრგვალდეს კთხეები 50% , შეიცვალოს ფერი სტაფილოსფერი , დაპატრავდეს ზომაში 1.5 დატრიალდეს 180deg , ჩამოვიდეს ქვევით 400px,გაუჩნდეს სტაფილოსფერი ჩრდილი
+
+გაგრძელდეს 5 წამი,იყოს ease in , განმეორდეს უსასრულოდ , ქონდეს alternate რომ ლამაზად დაბრუნდეს საწყის სტილებზე -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            animation: complexAnimation 5s ease-in infinite alternate;
+        }
+
+        @keyframes complexAnimation {
+            0% {
+                background-color: green;
+                border-radius: 0px;
+                transform: scale(1) rotate(0deg) translateY(0px);
+            }
+
+            25% {
+                border-radius: 10px;
+                background-color: yellow;
+                transform: scale(1.2) rotate(20deg) translateY(0px);
+            }
+
+            50% {
+                border-radius: 20px;
+                background-color: red;
+                transform: scale(1.5) rotate(50deg) translateY(100px);
+            }
+
+            75% {
+                border-radius: 50px;
+                background-color: blue;
+                transform: scale(2) rotate(140deg) translateY(200px);
+            }
+
+            100% {
+                border-radius: 50%;
+                background-color: orange;
+                transform: scale(1.5) rotate(180deg) translateY(300px);
+                box-shadow: 0px 0px 20px orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>
