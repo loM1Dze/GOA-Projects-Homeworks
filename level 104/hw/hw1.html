@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0c1b23;
+        }
+
+        .txt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bounce span,
+        .reflection span {
+            font-size: 100px;
+            font-weight: 900;
+            color: #bbf2f6;
+            text-transform: uppercase;
+            display: inline-block;
+            animation: bounce 1.2s ease-in-out infinite;
+        }
+
+        .reflection {
+            transform: scaleY(-1) translateY(20px);
+            opacity: 0.15;
+        }
+
+        .bounce span:nth-child(1),
+        .reflection span:nth-child(1) {
+            animation-delay: 0.0s;
+        }
+
+        .bounce span:nth-child(2),
+        .reflection span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .bounce span:nth-child(3),
+        .reflection span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .bounce span:nth-child(4),
+        .reflection span:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .bounce span:nth-child(5),
+        .reflection span:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .bounce span:nth-child(6),
+        .reflection span:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-35px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="txt">
+        <div class="bounce">
+            <span>b</span>
+            <span>o</span>
+            <span>u</span>
+            <span>n</span>
+            <span>c</span>
+            <span>e</span>
+        </div>
+
+        <div class="reflection">
+            <span>b</span>
+            <span>o</span>
+            <span>u</span>
+            <span>n</span>
+            <span>c</span>
+            <span>e</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
