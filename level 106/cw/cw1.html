@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        body {
+            height: 500px;
+            width: 500px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            
+        }
+
+        .parent {
+            display: grid;
+
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+
+            justify-items: center ;
+            align-items: end;
+        }
+
+        .box {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="b">
+        <div class="parent">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
