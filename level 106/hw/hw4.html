@@ -1,0 +1,94 @@
+<!-- 7)შექმენი Grid, რომელსაც ექნება:
+
+4 სვეტი
+3 რიგი
+gap: 20px
+justify-content: center
+align-content: center
+justify-items: center
+align-items: center
+
+დამატებითი პირობა:
+
+კონტეინერის ზომა იყოს 900px × 500px.
+თითოეულ ელემენტს განსხვავებული ფერი ჰქონდეს.
+ყველა ელემენტზე იყოს ნომერი (1–12). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Item Grid Layout</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px;
+            grid-template-rows: 100px 100px 100px;
+            
+            width: 900px;
+            height: 500px;
+            gap: 20px;
+            background-color: #1e2343;
+
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .item {
+            width: 80px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .box1  { background-color: #f04e45; }
+        .box2  { background-color: #22c3d3; }
+        .box3  { background-color: #dcb372; }
+        .box4  { background-color: #61b846; }
+        .box5  { background-color: #b946b8; }
+        .box6  { background-color: #f9a01b; }
+        .box7  { background-color: #4668b8; }
+        .box8  { background-color: #46b8a5; }
+        .box9  { background-color: #e67e22; }
+        .box10 { background-color: #9b59b6; }
+        .box11 { background-color: #1abc9c; }
+        .box12 { background-color: #34495e; }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="item box1">1</div>
+        <div class="item box2">2</div>
+        <div class="item box3">3</div>
+        <div class="item box4">4</div>
+        <div class="item box5">5</div>
+        <div class="item box6">6</div>
+        <div class="item box7">7</div>
+        <div class="item box8">8</div>
+        <div class="item box9">9</div>
+        <div class="item box10">10</div>
+        <div class="item box11">11</div>
+        <div class="item box12">12</div>
+    </div>
+
+</body>
+</html>

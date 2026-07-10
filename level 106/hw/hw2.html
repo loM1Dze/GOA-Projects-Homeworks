@@ -1,0 +1,52 @@
+<!-- 5)დავალება 3 — justify-items
+
+შექმენი:
+
+3 სვეტი (120px)
+თითოეულ ელემენტს მიეცი width: 60px.
+
+დავალება:
+გამოიყენე:
+
+justify-items: start
+justify-items: center
+justify-items: end
+
+აღწერე რა ხდება -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Justify Items</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 120px 120px 120px;
+
+            justify-items: center;
+            /* იგივეა როგორც პირველ სავარჯიშოში justify-content მაგრამ განსხვავება ის არის რომ ეს გრიდში მყოფ ელემენტებზე ახდებს გავლენას და ამოძრავებს x ღერძზე */
+        }
+
+        .item {
+            width: 60px;
+            height: 60px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+</body>
+
+</html>

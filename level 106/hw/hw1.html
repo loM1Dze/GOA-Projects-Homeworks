@@ -1,0 +1,53 @@
+<!-- 4)align-content იგივე კონტეინერს დაუმატე:
+იგივე კონტეინერს დაუმატე:
+
+grid-template-rows: 70px 70px;
+height: 500px;
+
+გამოიყენე:
+
+start
+center
+end
+
+კითხვა: რა მიმართულებით გადაადგილდება მთელი გრიდი?დაწერეთ ლომენტარის სახით -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Align Content</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 70px 70px;
+            width: 700px;
+            height: 500px;
+
+            align-content: center; /* ამოძრავებს მთლიან გრიდს დივში Y ღერძზე */
+        }
+
+        .item {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+</body>
+
+</html>
