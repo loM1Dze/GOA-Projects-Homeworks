@@ -4,14 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
+  <title>Frontend Mentor | Bento Grid</title>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
     * {
       box-sizing: border-box;
@@ -25,114 +22,141 @@
       justify-content: center;
       align-items: center;
       font-family: 'DM Sans', sans-serif;
+      background-color: #f5f5f5;
     }
 
-    #parent {
-      height: 813px;
-      width: 1030px;
-      border: 1px solid red;
-    }
-
-    .skin {
-      background-color: rgb(250, 238, 226);
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 5;
-      justify-content: center;
-      padding: 0 25px;
-      gap: 15px;
-    }
-
-    .skin img {}
-
-    .skin h2 {
-      font-size: 40px;
-      line-height: 0.9;
-      font-weight: 500;
-    }
-
-    .fyellow {
-      background-color: rgb(255, 204, 105);
-      grid-row: 6 / span 10;
-      grid-column: 1 / span 1;
-    }
-
-    .fpurple {
-      background-color: rgb(116, 80, 217);
-      grid-row: 2 / span 2;
-      grid-column: 1 / span 4;
-    }
-
-    .fwhite {
-      background-color: rgb(255, 255, 255);
-      grid-column: 2 / span 1;
-      grid-row: 5 / span 3;
-    }
-
-    .swhite {
-      background-color: rgb(255, 255, 255);
-      grid-column: 2 / 3;
-      grid-row: 8 / span 3;
-    }
-
-    .syellow {
-      background-color: rgb(255, 204, 105);
-      grid-column: 3 / 4;
-      grid-row: 5 / 8;
-    }
-
-    .spurple {
-      background-color: rgb(116, 80, 217);
-      grid-column: 3 / 5;
-      grid-row: 8 / span 3;
-    }
-
-    .lpurple {
-      background-color: rgb(220, 209, 252);
-      grid-column: 4 / 5;
-      grid-row: 1 / span 7;
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(4, 250px);
+      grid-template-rows: repeat(10, 60px);
+      gap: 20px;
     }
 
     .same {
       border-radius: 10px;
       display: flex;
       flex-direction: column;
-      box-shadow: 0 0 10px rgb(217, 217, 217);
+      padding: 20px;
+      box-shadow: 0 0 10px rgb(238, 238, 238);
+    }
+
+    .skin {
+      background-color: rgb(250, 238, 226);
+      grid-column: 1 / 2;
+      grid-row: 1 / 6;
+      gap: 20px;
+    }
+
+    .fyellow {
+      background-color: rgb(255, 204, 105);
+      grid-column: 1 / 2;
+      grid-row: 6 / 11;
+      gap: 30px;
+    }
+
+    .fpurple {
+      background-color: rgb(116, 80, 217);
+      color: white;
+      grid-column: 2 / 4;
+      grid-row: 1 / 5;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .fwhite {
+      background-color: rgb(255, 255, 255);
+      grid-column: 2 / 3;
+      grid-row: 5 / 8;
+
+    }
+
+    .syellow {
+      background-color: rgb(255, 204, 105);
+      grid-column: 3 / 4;
+      grid-row: 5 / 8;
+      gap: 15px;
+    }
+
+    .lpurple {
+      background-color: rgb(220, 209, 252);
+      grid-column: 4 / 5;
+      grid-row: 1 / 8;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .swhite {
+      background-color: rgb(255, 255, 255);
+      grid-column: 2 / 3;
+      grid-row: 8 / 11;
+      gap: 15px;
+    }
+
+    .spurple {
+      background-color: rgb(116, 80, 217);
+      color: white;
+      grid-column: 3 / 5;
+      grid-row: 8 / 11;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
     }
   </style>
 </head>
-<div class="parent">
-  <div class="same skin">
-    <h2>Create and schedule content quicker.</h2>
-  </div>
-  <div class="same fyellow"></div>
-  <div class="same fpurple"></div>
-  <div class="same fwhite"></div>
-  <div class="same swhite"></div>
-  <div class="same syellow"></div>
-  <div class="same spurple"></div>
-  <div class="same lpurple" style="flex-direction: row;"></div>
-</div>
 
 <body>
-  <!-- 
-  Social Media 10x Faster with AI
-  Over 4,000 5-star reviews
 
-  Manage multiple accounts and platforms.
+  <div class="parent">
 
-  Maintain a consistent posting schedule.
+    <div class="same skin">
+      <h2 style="font-size: 35px; font-weight: 600;">Create and schedule content <span
+          style="color: #7450D9; font-style: italic;">quicker.</span></h2>
+      <img src="./assets/images/illustration-create-post.webp" alt="" width="190">
+    </div>
 
-  Schedule to social media.
-  Optimize post timings to publish content at the perfect time for your audience.
-  
-  Grow followers with non-stop content.
+    <div class="same fyellow">
+      <h2 style="font-size: 30px; font-weight: 600; line-height: 35px;">Write your content<br> using AI.</h2>
+      <img src="./assets/images/illustration-ai-content.webp" alt="" width="200">
+    </div>
 
-  >56% faster audience growth
-  
-  
+    <div class="same fpurple">
+      <h1 style="font-size: 50px; font-weight: 500">Social Media <span style="color: rgb(255, 204, 105);">10x</span>
+        <span style="font-style: italic;">Faster</span> with AI
+      </h1>
+      <img src="./assets/images/illustration-five-stars.webp" alt="" width="160">
+      <p>Over 4,000 5-star reviews</p>
+    </div>
 
-  Write your content using AI. -->
+    <div class="same fwhite">
+      <img src="./assets/images/illustration-multiple-platforms.webp" alt="" width="250">
+      <h3 style="font-size: 27px; font-weight: 600; line-height: 1.1;">Manage multiple accounts and platforms.</h3>
+    </div>
 
+    <div class="same syellow">
+      <h3 style="font-size: 19px;">Maintain a consistent posting schedule.</h3>
+      <img src="./assets/images/illustration-consistent-schedule.webp" alt="" width="180">
+    </div>
+
+    <div class="same lpurple">
+      <h3 style="font-size: 30px; font-weight: 500; line-height: 1;">Schedule to social media.</h3>
+      <img src="./assets/images/illustration-schedule-posts.webp" alt="" width="200">
+      <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+    </div>
+
+    <div class="same swhite">
+      <h2 style="font-size: 50px; font-weight: 500;">>56%</h2>
+      <p>faster audience growth</p>
+      <img src="./assets/images/illustration-audience-growth.webp" alt="" width="140">
+    </div>
+
+    <div class="same spurple">
+      <img src="./assets/images/illustration-grow-followers.webp" alt="" width="180">
+      <h3 style="font-size: 40px; font-weight: 400; line-height: 0.9;">Grow followers with non-stop content.</h3>
+    </div>
+
+  </div>
 
 </body>
 
