@@ -1,0 +1,58 @@
+<!-- შექმენით ერთი დივი -- სიგანე 600პხ სიმაღლე 400პხ ფერი წითელი
+
+შენი დავალებაა როცა ეკრანის ზომა ჩამოცდება 1000პხ ს შეიცვალოს დივი და გახდეს -- სიგანეში 450პხ სიმაღლეში 350ხ ,ფერი ლურჯი , მოუმრგვალე კუთხეები 20px ით
+
+შენი დავალებაა როცა ეკრანის ზომა ჩამოცდება 700პხ ს შეიცვალოს დივი და გახდეს -- სიგანეში 400პხ სიმაღლეში 300ხ ,ფერი ყვითელი , მოუმრგვალე კუთხეები 40px ით
+
+შენი დავალებაა როცა ეკრანის ზომა ჩამოცდება 500პხ ს შეიცვალოს დივი და გახდეს -- სიგანეში 400პხ სიმაღლეში 300ხ ,ფერი იასამნისფერი , მოუმრგვალე კუთხეები 50% ით , ასევე დატრიალდეს 60deg ით  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test {
+            width: 600px;
+            height: 400px;
+            background-color: red;
+        }
+
+        @media (max-width: 1000px) {
+            .test {
+                width: 450px;
+                height: 350px;
+                background-color: blue;
+                border-radius: 20px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .test {
+                width: 400px;
+                height: 300px;
+                background-color: yellow;
+                border-radius: 40px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .test {
+                width: 400px;
+                height: 300px;
+                background-color: purple;
+                border-radius: 50%;
+                transform: rotate(60deg);
+            }
+        }
+    </style>
+</head>
+
+<body>  
+    <div class="test"></div>
+</body>
+
+</html>

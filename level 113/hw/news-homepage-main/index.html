@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Inter", sans-serif;
+    }
+
+    .parent {
+      width: 1020px;
+      height: 660px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 300px 200px 160px;
+      gap: 30px;
+    }
+
+    .div1 {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 2;
+    }
+
+    .div1 img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .div2 {
+      grid-row: 1 / span 2;
+      grid-column: 3 / span 1;
+      background-color: rgb(0, 0, 26);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 25px;
+    }
+
+    .div4 {
+      display: flex;      
+      flex-direction: column;
+      gap: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="div1 same">
+      <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+    </div>
+
+    <div class="div2 same">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <h1 style="color: rgb(233, 171, 83); font-size: 35px;">New</h1>
+        <h2 style="font-size: 18px; margin-top: 20px;">Hydrogen VS Electric Cars</h2>
+        <p style="font-size: 14px; opacity: 60%; line-height: 1.7;">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+
+      <div
+        style="border-top: 1px solid hsl(236, 13%, 42%); border-bottom: 1px solid hsl(236, 13%, 42%); padding: 20px 0; display: flex; flex-direction: column; gap: 10px;">
+        <h2 style="font-size: 18px; margin-top: 20px;">The Downsides of AI Artistry</h2>
+        <p style="font-size: 14px; opacity: 60%; line-height: 1.7;">What are the possible adverse effects of on-demand
+          AI image generation?</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <h2 style="font-size: 18px; margin-top: 20px;">Is VC Funding Drying Up?</h2>
+        <p style="font-size: 14px; opacity: 60%; line-height: 1.7;">Private funding by VC firms is down 50% YOY. We take
+          a look at what that means.</p>
+      </div>
+    </div>
+
+    <div class="div3 same">
+      <h1 style="font-size: 50px; font-weight: 800;">The Bright Future of Web 3.0?</h1>
+    </div>
+
+
+    <div class="div4 same">
+      <p style="font-size: 14px; line-height: 1.7; opacity: 70%;">We dive into the next evolution of the web that claims
+        to put the
+        power of the platforms back into the hands
+        of the people.
+        But is it really fulfilling its promise?</p>
+      <div style="background-color: #f15d51; align-self: self-start;">Read more</div>
+    </div>
+
+    <div class="div5 same"></div>
+    <div class="div6 same"></div>
+    <div class="div7 same"></div>
+  </div>
+  <!-- Home
+  
+  Popular
+  Trending
+  Categories
+
+  
+
+
+
+  Read more
+
+  
+  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities. -->
+</body>
+
+</html>
