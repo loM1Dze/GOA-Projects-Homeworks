@@ -1,0 +1,65 @@
+<!-- 4)ბარათების განლაგება
+
+შექმენი 4 ბარათი Flexbox-ით.
+
+Desktop-ზე ოთხივე ერთ ხაზზე.
+768px-ზე ნაკლებ ეკრანზე ორ-ორი ჩამოვიდეს.
+480px-ზე ნაკლებ ეკრანზე თითო ბარათი ცალკე ხაზზე. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h3>1</h3>
+        </div>
+
+        <div class="card">
+            <h3>2</h3>
+        </div>
+
+        <div class="card">
+            <h3>3</h3>
+        </div>
+
+        <div class="card">
+            <h3>4</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>

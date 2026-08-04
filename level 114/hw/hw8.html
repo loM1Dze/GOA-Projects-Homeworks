@@ -1,0 +1,102 @@
+<!-- 9)შექმენი პროფილის ბარათი, რომელშიც იქნება:
+
+ფოტო
+სახელი
+პროფესია
+ღილაკი
+
+Desktop-ზე:
+
+ფოტო მარცხნივ
+ინფორმაცია მარჯვნივ
+
+Mobile-ზე:
+
+ფოტო ზემოთ
+ინფორმაცია ქვემოთ
+ღილაკი გახდეს width: 100% -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 420px
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info {
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="https://imgs.search.brave.com/6oSvRXyEluDHla9y4fcH6IGU3-O3j00c-VFdCfpb6FU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/Z2RmNDRlNGdzbTc0/MS5qcGc_d2lkdGg9/NjQwJmNyb3A9c21h/cnQmYXV0bz13ZWJw/JnM9MWNmZTg1ZWI0/ZjQ5YjZmMGI5MTVj/MzFjZTViODQyZTJh/MzQzNzY1Mg"
+            alt="Elliot Alderson">
+
+        <div class="info">
+            <h2>Elliot Alderson</h2>
+            <p>Just a Tech</p>
+            <button class="btn">Contact</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
