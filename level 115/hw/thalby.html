@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 30px 120px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            width: 660px;
+            justify-content: space-between;
+        }
+
+        nav img {
+            width: 100px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+            font-weight: 700;
+        }
+
+        .icons img {
+            width: 35px;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #menu {
+            width: 30px;
+            display: none;
+        }
+
+
+
+        .sec {
+            display: flex;
+            background-color: rgb(240, 239, 235);
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px 70px;
+        }
+
+        .txtdiv {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            align-items: start;
+            width: 50%;
+        }
+
+        .txtdiv h1 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .txtdiv p {
+            margin-top: 26px;
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        .txtdiv button {
+            width: 130px;
+            height: 36px;
+            background: rgb(0, 0, 0);
+            color: white;
+            border-radius: 50px;
+        }
+
+        .sec img {
+            width: 530px;
+        }
+
+        @media (max-width:1162px) {
+            .txtdiv {
+                padding: 20px;
+            }
+
+            .txtdiv h1 {
+                font-size: 40px;
+            }
+
+            .txtdiv p {
+                font-size: 20px;
+            }
+
+            .sec img {
+                width: 40%;
+            }
+        }
+
+        @media (max-width:940px) {
+            header {
+                padding: 30px 40px;
+            }
+
+            .sec {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width:768px) {
+            header {
+                padding: 15px 30px;
+            }
+
+            ul {
+                display: none;
+            }
+
+            #menu {
+                display: block;
+            }
+
+            .sec {
+                flex-direction: column;
+                text-align: center;
+                gap: 60px;
+            }
+
+            .sec img {
+                width: 70%;
+            }
+
+            .txtdiv {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./Images/Menu.png" id="menu">
+            <ul>
+                <li>Shop</li>
+                <li>Collections</li>
+                <li>Try a Free Guide</li>
+                <li>Stories</li>
+            </ul>
+
+            <img src="./Images/thalby.gif" alt="thalby logo">
+        </nav>
+
+        <div class="icons">
+            <img src="./Images/IG.png" alt="" style="width: 20px;">
+            <img src="./Images/Search.png" alt="">
+            <img src="./Images/Lock.png" alt="" style="width: 30px;">
+        </div>
+    </header>
+
+    <main>
+        <section class="sec">
+            <div class="txtdiv">
+                <h1>Fall deeper in love <br> with <br> humanity.</h1>
+                <p>Get to know the world through our concise, informative and inspiring guides.</p>
+                <button>Shop Now</button>
+            </div>
+
+            <img src="./Images/Card.png" alt="card">
+        </section>
+    </main>
+</body>
+
+</html>
