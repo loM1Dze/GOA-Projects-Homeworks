@@ -64,7 +64,7 @@
 
 
 
-        .sec {
+        .sec1 {
             display: flex;
             background-color: rgb(240, 239, 235);
             align-items: center;
@@ -99,9 +99,121 @@
             border-radius: 50px;
         }
 
-        .sec img {
+        .sec1 img {
             width: 530px;
         }
+
+        .sec2 {
+            padding: 60px 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .sec2 h3 {
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .p1,
+        .p2 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .p1 {
+            width: 43%;
+        }
+
+        .sec3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            text-align: center;
+            padding: 70px 30px;
+        }
+
+        .carddiv {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .carddiv img {
+            width: 309px;
+        }
+
+        .samediv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .samediv h3 {
+            font-weight: 700;
+            font-size: 17px;
+            width: 50%;
+        }
+
+        .samediv p {
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        .samediv a {
+            color: black;
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .sec4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            width: 100%;
+        }
+
+        .sec4 img {
+            width: 309px;
+        }
+
+        .txt {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 40%;
+        }
+
+        .txt h1 {
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .txt p {
+            font-weight: 400;
+            font-size: 36px;
+            width: 100%;
+        }
+
+        .txt a {
+            font-weight: 700;
+            font-size: 17px;
+            text-decoration: underline;
+            color: black;
+        }
+
+
 
         @media (max-width:1162px) {
             .txtdiv {
@@ -116,9 +228,19 @@
                 font-size: 20px;
             }
 
-            .sec img {
+            .sec1 img {
                 width: 40%;
             }
+
+            .sec2 h3 {
+                font-size: 30px;
+            }
+
+            .p1,
+            .p2 {
+                font-size: 17px;
+            }
+
         }
 
         @media (max-width:940px) {
@@ -126,8 +248,29 @@
                 padding: 30px 40px;
             }
 
-            .sec {
+            .sec1 {
                 padding: 10px;
+            }
+
+            .sec2 h3 {
+                font-size: 27px;
+            }
+
+            .p1 {
+                width: 70%;
+            }
+
+            .p1,
+            .p2 {
+                font-size: 15px;
+            }
+
+            .carddiv img {
+                width: 280px;
+            }
+
+            .sec3 h1 {
+                font-size: 25px;
             }
         }
 
@@ -144,18 +287,40 @@
                 display: block;
             }
 
-            .sec {
+            .sec1 {
                 flex-direction: column;
                 text-align: center;
                 gap: 60px;
             }
 
-            .sec img {
+            .sec1 img {
                 width: 70%;
             }
 
             .txtdiv {
                 align-items: center;
+                width: 100%;
+            }
+
+            .sec2 h3 {
+                font-size: 23px;
+            }
+
+            .p1 {
+                width: 80%;
+            }
+
+            .p1,
+            .p2 {
+                font-size: 13px;
+            }
+
+            .carddiv img {
+                width: 200px;
+            }
+
+            .sec3 h1 {
+                font-size: 22px;
             }
         }
     </style>
@@ -183,7 +348,7 @@
     </header>
 
     <main>
-        <section class="sec">
+        <section class="sec1">
             <div class="txtdiv">
                 <h1>Fall deeper in love <br> with <br> humanity.</h1>
                 <p>Get to know the world through our concise, informative and inspiring guides.</p>
@@ -192,6 +357,51 @@
 
             <img src="./Images/Card.png" alt="card">
         </section>
+
+        <section class="sec2">
+            <h3>Our guides explain countries and cultures.</h3>
+            <p class="p1">Are you curious about the world around you? Our guides are for smart global citizens, world
+                travelers and
+                engaged residents who want to gain a deeper understanding of the cultures and societies they care about.
+            </p>
+            <p class="p2">Available as ebooks here and on Amazon.</p>
+        </section>
+
+        <section class="sec3">
+            <h1>Our best sellers</h1>
+
+            <div class="carddiv">
+                <div class="samediv">
+                    <img src="./Images/Card1.png" alt="">
+                    <h3>Thalby Guide to French Culture and Heritage</h3>
+                    <p>USD 6.99</p>
+                    <a href="">Add to cart</a>
+                </div>
+
+                <div class="samediv"><img src="./Images/Card2.png" alt="">
+                    <h3>Thalby Guide to French People and Society</h3>
+                    <p>USD 6.99</p>
+                    <a href="">Add to cart</a>
+                </div>
+
+                <div class="samediv"><img src="./Images/Card3.png" alt="">
+                    <h3>Thalby Guide to German Culture and Heritage</h3>
+                    <p>USD 6.99</p>
+                    <a href="">Add to cart</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="sec4">
+            <img src="./Images/Card2.png" alt="">
+
+            <div class="txt">
+                <h1>People and Society</h1>
+                <p>Our guides to society deliver all the social insight you need, helping you understand how people
+                    live, love and play today and why communities are the way they are.</p>
+                <a href="">Shop Society Guides</a>
+            </div>
+        </section> -->
     </main>
 </body>
 
