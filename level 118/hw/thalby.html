@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 30px 120px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            width: 660px;
+            justify-content: space-between;
+        }
+
+        nav img {
+            width: 100px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+            font-weight: 700;
+        }
+
+        .icons img {
+            width: 35px;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #menu {
+            width: 30px;
+            display: none;
+        }
+
+        .sec1 {
+            display: flex;
+            background-color: rgb(240, 239, 235);
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px 70px;
+        }
+
+        .txtdiv {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            align-items: start;
+            width: 50%;
+        }
+
+        .txtdiv h1 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .txtdiv p {
+            margin-top: 26px;
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        .txtdiv button {
+            width: 130px;
+            height: 36px;
+            background: rgb(0, 0, 0);
+            color: white;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sec1 img {
+            width: 530px;
+        }
+
+        .sec2 {
+            padding: 60px 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .sec2 h3 {
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .p1,
+        .p2 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .p1 {
+            width: 43%;
+        }
+
+        .sec3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            text-align: center;
+            padding: 70px 30px;
+        }
+
+        .carddiv {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .carddiv img {
+            width: 309px;
+        }
+
+        .samediv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .samediv h3 {
+            font-weight: 700;
+            font-size: 17px;
+            width: 50%;
+        }
+
+        .samediv p {
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        .samediv a {
+            color: black;
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .sec4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            width: 100%;
+            margin-top: 200px;
+        }
+
+        .sec4 img {
+            width: 309px;
+        }
+
+        .txt {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 40%;
+        }
+
+        .txt h1 {
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .txt p {
+            font-weight: 400;
+            font-size: 36px;
+            width: 100%;
+        }
+
+        .txt a {
+            font-weight: 700;
+            font-size: 17px;
+            color: black;
+        }
+
+        #different {
+            padding: 50px 0px;
+            flex-direction: row;
+            background-color: rgb(224, 224, 224);
+        }
+
+        #different .txt {
+            text-align: right;
+        }
+
+        .sec5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 80px 20px;
+            gap: 60px;
+            margin-top: 200px;
+        }
+
+        .sec5 h1 {
+            font-weight: 400;
+            font-size: 36px;
+            max-width: 500px;
+        }
+
+        .circle-div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px 60px;
+            width: 70%;
+        }
+
+        .circle-div .grid1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .circle-div img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .circle-div p {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .sec6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+            width: 100%;
+            margin-top: 200px;
+        }
+
+        .sec6 h1 {
+            text-align: center;
+        }
+
+        .sketch {
+            display: flex;
+        }
+
+        .ssketch img{
+            width: 390px;
+        }
+        @media (max-width: 1162px) {
+            .txtdiv {
+                padding: 20px;
+            }
+
+            .txtdiv h1 {
+                font-size: 40px;
+            }
+
+            .txtdiv p {
+                font-size: 20px;
+            }
+
+            .sec1 img {
+                width: 40%;
+            }
+
+            .sec2 h3 {
+                font-size: 30px;
+            }
+
+            .p1,
+            .p2 {
+                font-size: 17px;
+            }
+
+            .sec4 img {
+                width: 300px;
+            }
+
+            .txt h1 {
+                font-size: 30px;
+            }
+
+            .txt p {
+                font-size: 27px;
+            }
+
+            .txt a {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 940px) {
+            header {
+                padding: 30px 40px;
+            }
+
+            .sec1 {
+                padding: 10px;
+            }
+
+            .sec2 h3 {
+                font-size: 27px;
+            }
+
+            .p1 {
+                width: 70%;
+            }
+
+            .p1,
+            .p2 {
+                font-size: 15px;
+            }
+
+            .carddiv img {
+                width: 280px;
+            }
+
+            .sec3 h1 {
+                font-size: 25px;
+            }
+
+            .sec4 img {
+                width: 250px;
+            }
+
+            .txt h1 {
+                font-size: 25px;
+            }
+
+            .txt p {
+                font-size: 23px;
+            }
+
+            .txt a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 30px;
+            }
+
+            ul {
+                display: none;
+            }
+
+            #menu {
+                display: block;
+            }
+
+            .sec1 {
+                flex-direction: column;
+                text-align: center;
+                gap: 60px;
+            }
+
+            .sec1 img {
+                width: 70%;
+            }
+
+            .txtdiv {
+                align-items: center;
+                width: 100%;
+            }
+
+            .sec2 h3 {
+                font-size: 23px;
+            }
+
+            .p1 {
+                width: 80%;
+            }
+
+            .p1,
+            .p2 {
+                font-size: 13px;
+            }
+
+            .carddiv img {
+                width: 200px;
+            }
+
+            .sec3 h1 {
+                font-size: 22px;
+            }
+
+            .sec4 {
+                flex-direction: column;
+            }
+
+            .sec4 img {
+                width: 250px;
+            }
+
+            #different {
+                flex-direction: column-reverse;
+            }
+
+            #different .txt {
+                text-align: center;
+                align-items: center;
+            }
+
+            .sec5 {
+                padding: 40px 20px;
+            }
+
+            .sec5 h1 {
+                font-size: 26px;
+            }
+
+            .circle-div {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./Images/Menu.png" id="menu" alt="menu">
+            <ul>
+                <li>Shop</li>
+                <li>Collections</li>
+                <li>Try a Free Guide</li>
+                <li>Stories</li>
+            </ul>
+
+            <img src="./Images/thalby.gif" alt="thalby logo">
+        </nav>
+
+        <div class="icons">
+            <img src="./Images/IG.png" alt="Instagram" style="width: 20px;">
+            <img src="./Images/Search.png" alt="Search">
+            <img src="./Images/Lock.png" alt="Lock" style="width: 30px;">
+        </div>
+    </header>
+
+    <main>
+        <section class="sec1">
+            <div class="txtdiv">
+                <h1>Fall deeper in love <br> with <br> humanity.</h1>
+                <p>Get to know the world through our concise, informative and inspiring guides.</p>
+                <button>Shop Now</button>
+            </div>
+
+            <img src="./Images/Card.png" alt="card">
+        </section>
+
+        <section class="sec2">
+            <h3>Our guides explain countries and cultures.</h3>
+            <p class="p1">Are you curious about the world around you? Our guides are for smart global citizens, world
+                travelers and engaged residents who want to gain a deeper understanding of the cultures and societies
+                they care about.
+            </p>
+            <p class="p2">Available as ebooks here and on Amazon.</p>
+        </section>
+
+        <section class="sec3">
+            <h1>Our best sellers</h1>
+
+            <div class="carddiv">
+                <div class="samediv">
+                    <img src="./Images/Card1.png" alt="">
+                    <h3>Thalby Guide to French Culture and Heritage</h3>
+                    <p>USD 6.99</p>
+                    <a href="">Add to cart</a>
+                </div>
+
+                <div class="samediv">
+                    <img src="./Images/Card2.png" alt="">
+                    <h3>Thalby Guide to French People and Society</h3>
+                    <p>USD 6.99</p>
+                    <a href="">Add to cart</a>
+                </div>
+
+                <div class="samediv">
+                    <img src="./Images/Card3.png" alt="">
+                    <h3>Thalby Guide to German Culture and Heritage</h3>
+                    <p>USD 6.99</p>
+                    <a href="">Add to cart</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec4">
+            <img src="./Images/Card2.png" alt="">
+
+            <div class="txt">
+                <h1>People and Society</h1>
+                <p>Our guides to society deliver all the social insight you need, helping you understand how people
+                    live, love and play today and why communities are the way they are.</p>
+                <a href="">Shop Society Guides</a>
+            </div>
+        </section>
+
+        <section class="sec4" id="different">
+            <div class="txt">
+                <h1>Culture and Heritage</h1>
+                <p>As well as covering heritage and tradition, our guides to culture introduce you to the designers,
+                    artists and chefs creating at the forefront of today's culture.</p>
+                <a href="">Shop Culture Guides</a>
+            </div>
+
+            <img src="./Images/Card4.png" alt="">
+        </section>
+
+        <section class="sec4">
+            <img src="./Images/Card5.png" alt="">
+
+            <div class="txt">
+                <h1>Power and Politics</h1>
+                <p>Our guides to power take you behind the scenes to explore the power dynamics, policies and
+                    politics shaping a country's future and its global position.</p>
+                <a href="">Coming 2022!</a>
+            </div>
+        </section>
+
+
+        <section class="sec5">
+            <h1>Some of the features that make Thalby guides unique</h1>
+            <div class="circle-div">
+                <div class="grid1">
+                    <div><img src="./Images/cyan.png" alt=""></div>
+                    <p>Written by <br> locals</p>
+                </div>
+
+                <div class="grid1">
+                    <div><img src="./Images/lightgreen.png" alt=""></div>
+                    <p>Packed with <br> insight</p>
+                </div>
+
+                <div class="grid1">
+                    <div><img src="./Images/blue.png" alt=""></div>
+                    <p>Interviews with <br> diverse voices</p>
+                </div>
+
+                <div class="grid1">
+                    <div><img src="./Images/orange.png" alt=""></div>
+                    <p>Key facts and <br> etiquette tips</p>
+                </div>
+
+                <div class="grid1">
+                    <div><img src="./Images/red.png" alt=""></div>
+                    <p>A concise <br> 1-hour read</p>
+                </div>
+
+                <div class="grid1">
+                    <div><img src="./Images/lightpurple.png" alt=""></div>
+                    <p>Instant <br> digital access</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="sec6">
+            <h1>Each Thalby guide includes interviews with <br> a range of fascinating voices, such as</h1>
+            <div class="sketch">
+                <div class="ssketch">
+                    <img src="./Images/sketch.png" alt="">
+                    <p>"I don’t like things to be <br> conventional. If it’s too <br> nice, I bring disorder."</p>
+                    <p>Camille Muller, <br> Landscape Designer, France</p>
+                    <a href="">Discover</a>
+                </div>
+
+                <div class="ssketch">
+                    <img src="./Images/sketch1.png" alt="">
+                    <p>"Magic is not magic in <br> the sense that I can just <br> wish for anything."</p>
+                    <p>Sonia Kowalewski, <br> Witch, Germany</p>
+                    <a href="">Discover</a>
+                </div>
+
+                <div class="ssketch">
+                    <img src="./Images/sketch2.png" alt="">
+                    <p>"I was eight years old <br> when I entered my first <br> competition. I won it."</p>
+                    <p>Lilly Stoephasius, <br> Skateboarder, Germany</p>
+                    <a href="">Discover</a>
+                </div>
+            </div>
+        </section> -->
+    </main>
+</body>
+
+</html>
