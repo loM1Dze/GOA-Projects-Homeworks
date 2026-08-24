@@ -61,6 +61,120 @@
             display: none;
         }
 
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 100px;
+            position: relative;
+        }
+
+        .hero div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 39%;
+        }
+
+        .hero h1 {
+            color: rgb(77, 77, 77);
+            font-size: 44px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            color: rgb(113, 113, 113);
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        #slide {
+            position: absolute;
+            bottom: 15px;
+            left: 48%;
+        }
+
+        .sec2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 60px 100px;
+        }
+
+        .sec2 h1 {
+            color: rgb(77, 77, 77);
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .sec2 p {
+            color: rgb(113, 113, 113);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+            max-width: 1150px;
+            padding: 20px;
+        }
+
+        .icons img {
+            width: 40px;
+        }
+
+        .sec3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 20px 100px;
+        }
+
+        .sec3 h1 {
+            color: rgb(77, 77, 77);
+            font-size: 30px;
+            font-weight: 600;
+            width: 35%;
+            text-align: center;
+        }
+
+        .sec3 p {
+            color: rgb(113, 113, 113);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .organisations {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 30px;
+        }
+
+        .organisations h1 {
+            color: rgb(77, 77, 77);
+            font-size: 22px;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        .organisations p {
+            color: rgb(113, 113, 113);
+            font-size: 11px;
+            font-weight: 400;
+            margin-top: 7px;
+        }
+
+
         @media (max-width: 1000px) {
             header {
                 padding: 21px 30px;
@@ -68,6 +182,36 @@
 
             #logo {
                 width: 120px;
+            }
+
+            .hero {
+                padding: 100px 30px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            #slide {
+                width: 6%;
+            }
+        }
+
+        @media (max-width: 940px) {
+            .pc {
+                width: 300px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .organisations {
+                flex-wrap: wrap;
             }
         }
 
@@ -79,6 +223,23 @@
             #burger {
                 display: block;
             }
+
+            .hero {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .hero div {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+
+            .sec2 h1 {
+                font-size: 27px;
+            }
+
+
         }
     </style>
 </head>
@@ -96,11 +257,75 @@
                 <li>Pricing</li>
             </ul>
 
-            <button>Register Now <img src="./images/vector.png" alt="" style="width:16px;"></button>
+            <button>Register Now <img src="./images/vector.png" alt="" style="width: 16px;"></button>
         </nav>
 
         <img id="burger" src="./images/Menu.png" alt="">
     </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Lessons and insights <span style="color: rgb(76, 175, 79);">from 8 years</span></h1>
+                <p>Where to grow your business as a photographer: site or social media?</p>
+                <button>Register</button>
+            </div>
+
+            <img src="./images/pc.png" alt="" width="400px" class="pc">
+
+            <img src="./images/slide.png" alt="" id="slide">
+        </section>
+
+        <section class="sec2">
+            <h1>Our Clients</h1>
+            <p>We have been working with some Fortune 500+ clients</p>
+
+            <div class="icons">
+                <img src="./images/icon.png" alt="" width="3%">
+                <img src="./images/icon1.png" alt="" width="3%">
+                <img src="./images/icon2.png" alt="" width="3%">
+                <img src="./images/icon3.png" alt="" width="3%">
+                <img src="./images/icon4.png" alt="" width="3%">
+                <img src="./images/icon5.png" alt="" width="3%">
+                <img src="./images/icon2.png" alt="" width="3%">
+            </div>
+        </section>
+
+        <section class="sec3">
+            <h1>Manage your entire community in a single system</h1>
+            <p>Who is Nextcent suitable for?
+            </p>
+
+            <div class="organisations">
+                <div>
+                    <img src="./images/membership.png" alt="" width="40px">
+
+                    <h1>Membership <br> Organisations</h1>
+                    <p>Our membership management <br> software provides full automation of <br> membership renewals and
+                        payments
+                    </p>
+                </div>
+
+                <div>
+                    <img src="./images/national.png" alt="" width="40px">
+
+                    <h1>National <br> Associations</h1>
+                    <p>Our membership management <br> software provides full automation of <br> membership renewals and
+                        <br> payments
+                    </p>
+                </div>
+
+                <div>
+                    <img src="./images/clubs.png" alt="" width="40px">
+
+                    <h1>Clubs And <br> Groups</h1>
+                    <p>Our membership management <br> software provides full automation of <br> membership renewals and
+                        payments
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
