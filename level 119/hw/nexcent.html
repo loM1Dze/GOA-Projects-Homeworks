@@ -154,10 +154,15 @@
         .organisations {
             display: flex;
             text-align: center;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             width: 100%;
             padding: 30px;
+            gap: 70px;
+        }
+
+        .organisations div {
+            width: 190px;
         }
 
         .organisations h1 {
@@ -213,6 +218,11 @@
             .organisations {
                 flex-wrap: wrap;
             }
+
+            #title {
+                font-size: 23px;
+                width: 70%;
+            }
         }
 
         @media (max-width: 740px) {
@@ -239,7 +249,10 @@
                 font-size: 27px;
             }
 
-
+            #title {
+                font-size: 21px;
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -292,7 +305,7 @@
         </section>
 
         <section class="sec3">
-            <h1>Manage your entire community in a single system</h1>
+            <h1 id="title">Manage your entire community in a single system</h1>
             <p>Who is Nextcent suitable for?
             </p>
 
@@ -300,8 +313,8 @@
                 <div>
                     <img src="./images/membership.png" alt="" width="40px">
 
-                    <h1>Membership <br> Organisations</h1>
-                    <p>Our membership management <br> software provides full automation of <br> membership renewals and
+                    <h1>Membership Organisations</h1>
+                    <p>Our membership management software provides full automation of membership renewals and
                         payments
                     </p>
                 </div>
@@ -309,17 +322,17 @@
                 <div>
                     <img src="./images/national.png" alt="" width="40px">
 
-                    <h1>National <br> Associations</h1>
-                    <p>Our membership management <br> software provides full automation of <br> membership renewals and
-                        <br> payments
+                    <h1>National Associations</h1>
+                    <p>Our membership management software provides full automation of membership renewals and
+                        payments
                     </p>
                 </div>
 
                 <div>
                     <img src="./images/clubs.png" alt="" width="40px">
 
-                    <h1>Clubs And <br> Groups</h1>
-                    <p>Our membership management <br> software provides full automation of <br> membership renewals and
+                    <h1>Clubs And Groups</h1>
+                    <p>Our membership management software provides full automation of membership renewals and
                         payments
                     </p>
                 </div>
