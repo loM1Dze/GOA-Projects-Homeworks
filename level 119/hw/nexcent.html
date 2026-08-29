@@ -121,7 +121,6 @@
             flex-wrap: wrap;
             gap: 30px;
             width: 100%;
-            max-width: 1150px;
             padding: 20px;
         }
 
@@ -179,6 +178,165 @@
             margin-top: 7px;
         }
 
+        .sec4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px 100px;
+        }
+
+        .sec4 h1 {
+            font-size: 33px;
+            font-weight: 600;
+            color: rgb(77, 77, 77);
+        }
+
+        .sec4 p {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgb(113, 113, 113);
+        }
+
+        .sec4 button {
+            width: 110px;
+            font-size: 12px;
+        }
+
+        .sec4 div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 40%;
+        }
+
+        .sec4 img {
+            width: 500px;
+        }
+
+        .sec5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding: 50px 100px;
+        }
+
+        .sec5 h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: rgb(77, 77, 77);
+        }
+
+        .sec5 p {
+            color: rgb(113, 113, 113);
+            font-size: 14px;
+        }
+
+        .stats {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            width: 350px
+        }
+
+        .stats div {
+            display: flex;
+        }
+
+        .stt {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sec5 .txt h1 {
+            width: 340px;
+        }
+
+        .sec7 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding: 50px 250px;
+        }
+
+        .sec7 h2 {
+            font-size: 16px;
+            color: rgb(76, 175, 79);
+        }
+
+        .sec7 p {
+            font-size: 14px;
+            color: rgb(113, 113, 113);
+        }
+
+        .sec7 span {
+            color: rgb(125, 134, 144);
+            font-size: 12px;
+
+        }
+
+        #tesla {
+            width: 300px;
+        }
+
+        .sec7 .txt1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 70%;
+        }
+
+        .tesla-icons {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+
+        @media (max-width: 1220px) {
+            .sec4 h1 {
+                font-size: 28px;
+            }
+
+            .sec4 p {
+                font-size: 10px;
+            }
+
+            .sec4 img {
+                width: 400px;
+            }
+
+            .sec4 button {
+                width: 90px;
+                font-size: 11px;
+            }
+
+            .sec7 h2 {
+                font-size: 14px;
+                color: rgb(76, 175, 79);
+            }
+
+            .sec7 p {
+                font-size: 12px;
+                color: rgb(113, 113, 113);
+            }
+
+            .sec7 span {
+                color: rgb(125, 134, 144);
+                font-size: 10px;
+
+            }
+
+            #tesla {
+                width: 250px;
+            }
+
+            .tesla-icons {
+                gap: 25px;
+            }
+
+        }
 
         @media (max-width: 1000px) {
             header {
@@ -204,6 +362,43 @@
             #slide {
                 width: 6%;
             }
+
+            .sec4 h1 {
+                font-size: 23px;
+            }
+
+            .sec4 p {
+                font-size: 9px;
+            }
+
+            .sec4 img {
+                width: 350px;
+            }
+
+            .sec4 {
+                padding: 20px 0px;
+            }
+
+            .sec7 h2 {
+                font-size: 12px;
+                color: rgb(76, 175, 79);
+            }
+
+            .sec7 p {
+                font-size: 10px;
+                color: rgb(113, 113, 113);
+            }
+
+            .sec7 span {
+                color: rgb(125, 134, 144);
+                font-size: 8px;
+
+            }
+
+            #tesla {
+                width: 200px;
+            }
+
         }
 
         @media (max-width: 940px) {
@@ -222,6 +417,10 @@
             #title {
                 font-size: 23px;
                 width: 70%;
+            }
+
+            .sec4 img {
+                width: 300px;
             }
         }
 
@@ -253,6 +452,34 @@
                 font-size: 21px;
                 width: 90%;
             }
+
+            .sec4 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .sec4 h1 {
+                font-size: 18px;
+            }
+
+            .sec4 div {
+                align-items: center;
+            }
+
+            .sec5 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .sec5 .txt {
+                h1 {
+                    font-size: 23px;
+                }
+            }
+
         }
     </style>
 </head>
@@ -338,7 +565,98 @@
                 </div>
             </div>
         </section>
-    </main>
+
+        <section class="sec4">
+            <img src="./images/pas.png" alt="">
+
+            <div>
+                <h1>The unseen of spending three years at Pixelgrade</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam
+                    vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+                    tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam
+                    quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+
+        <section class="sec5">
+            <div class="txt">
+                <h1>Helping a local <span style="color: rgb(76, 175, 79);">business reinvent itself</span></h1>
+                <p>We reached here with our hard work and dedication</p>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <img src="./images/member.png" alt="" width="40px">
+                    <div class="stt">
+                        <h2>2,245,341</h2>
+                        <p>Members</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/clubs1.png" alt="" width="40px">
+                    <div class="stt">
+                        <h2>46,328</h2>
+                        <p>Clubs</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/event.png" alt="" width="40px">
+                    <div class="stt">
+                        <h2>828,867</h2>
+                        <p>Event Bookings</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/payment.png" alt="" width="40px">
+                    <div class="stt">
+                        <h2>1,926,436</h2>
+                        <p>Payments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec4">
+            <img src="./images/ftr.png" alt="" width="400px">
+
+            <div>
+                <h1>How to design your site footer like we did</h1>
+                <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa
+                    nunc sollicitudin justo, posuere facilisis justo lacus nec elit. Maecenas sed felis molestie,
+                    porttitor quam sit amet, facilisis magna. Cras ut ligula quis massa tincidunt cursus. Quisque eu
+                    magna eros.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+
+        <section class="sec7">
+            <img id="tesla" src="./images/tesla.png" alt="">
+
+            <div class="txt1">
+                <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus
+                    tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+                    enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec
+                    molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales.
+                    Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim
+                    sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero
+                    condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+                <h2>Tim Smith</h2>
+                <span>British Dragon Boat Racing Association</span>
+
+                <div class="tesla-icons">
+                    <img src="./images/icon.png" alt="" width="30px">
+                    <img src="./images/icon1.png" alt="" width="30px">
+                    <img src="./images/icon2.png" alt="" width="30px">
+                    <img src="./images/icon3.png" alt="" width="30px">
+                    <img src="./images/icon4.png" alt="" width="30px">
+                    <img src="./images/icon5.png" alt="" width="30px">
+
+                    <a href="#" style="color: rgb(76, 175, 79); font-weight: 600; text-decoration: none;">Meet all
+                        customers →</a>
+                </div>
+            </div>
+        </section>
 </body>
 
 </html>
