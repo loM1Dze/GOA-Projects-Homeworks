@@ -30,3 +30,15 @@ function sayMyInfo(){
 }
 
 sayMyInfo()
+
+
+
+
+
+function printInfo(name, surname, parchusPrice) {
+    console.log(`hello my name is ${name} my surname is ${surname} and parchusPrice is ${parchusPrice} !`)
+}
+
+printInfo("გიორგი", "ბერიძე", 150)
+printInfo("ნიკა", "კაპანაძე", 89.99)
+printInfo("ანანო", "მაისურაძე", 210)
