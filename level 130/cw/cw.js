@@ -23,7 +23,7 @@
 
 
 function displayCar(brand = "Mercedes", year = 2020, color = "Black") {
-  return `ავტომობილი: ${brand}, გამოშვების წელი: ${year}, ფერი: ${color}`;
+  return `ავტომობილი: ${brand}, გამოშვების წელი: ${year}, ფერი: ${color}`
 }
 
 console.log(displayCar("BMW"))
@@ -47,3 +47,63 @@ function compareNumbers(num1, num2) {
 console.log(compareNumbers(10, 5))
 console.log(compareNumbers(3, 8))
 console.log(compareNumbers(7, 7))
+
+
+
+/*
+3)შექმენი function expression, სახელად calculatePrice.
+
+ფუნქციამ მიიღოს 3 პარამეტრი:
+
+product
+price
+quantity = 1
+ფუნქციის პირობები:
+
+თუ price არის 0 ან უარყოფითი, გამოიტანე:
+Invalid price
+
+თუ quantity არის 0 ან უარყოფითი, გამოიტანე:
+Invalid quantity
+
+სხვა შემთხვევაში გამოთვალე პროდუქტის სრული ფასი:
+price * quantity
+
+თუ სრული ფასი არის 100-ზე მეტი ან ტოლი, მომხმარებელს მიეცეს 10% ფასდაკლება.
+
+თუ სრული ფასი 100-ზე ნაკლებია, ფასდაკლება არ იყოს.
+
+საბოლოოდ გამოიტანე:
+Product: Laptop
+Total: 135
+
+ფუნქცია გამოიძახე მინიმუმ 4-ჯერ:
+*/
+
+
+const calculatePrice = function (product, price, quantity = 1) {
+
+  if (price <= 0) {
+    return "Invalid price"
+  }
+
+  if (quantity <= 0) {
+    return "Invalid quantity"
+  }
+
+  let totalPrice = price * quantity
+
+  if (totalPrice >= 100) {
+    totalPrice = totalPrice * 0.9
+  }
+
+  return `Product: ${product}\nTotal: ${totalPrice}`
+}
+
+console.log(calculatePrice("Mouse", 0, 2))
+
+console.log(calculatePrice("Keyboard", 50, -1))
+
+console.log(calculatePrice("Headphones", 20, 3))
+
+console.log(calculatePrice("Laptop", 150, 1))
