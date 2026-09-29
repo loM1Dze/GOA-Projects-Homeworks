@@ -146,7 +146,7 @@ const calculate = function (num1, num2, operation) {
     } else if (operation === "*") {
         return num1 * num2
     } else {
-        return "არასწორი ოპერაცია"
+        return 'არასწორი ოპერაცია'
     }
 }
 
@@ -235,38 +235,6 @@ const getFinalPrice = function (price, discount) {
 console.log(getFinalPrice(100, 20))
 console.log(getFinalPrice(200, 15))
 console.log(getFinalPrice(50, 10))
-
-
-
-/*
-9)შექმენი Function Expression:
-
-const login = function(username, password) {
-    
-}
-სწორი მონაცემებია:
-
-username → "admin"
-password → "1234"
-
-თუ ორივე სწორია, დააბრუნოს:
-
-Login successful
-
-თუ რომელიმე არასწორია:
-
-Invalid username or password
-*/
-
-
-const getFinalPrice1 = function (price, discount) {
-    return price - (price * discount / 100)
-}
-
-console.log(getFinalPrice1(100, 20))
-console.log(getFinalPrice1(200, 15))
-console.log(getFinalPrice1(50, 10))
-
 
 
 /*
