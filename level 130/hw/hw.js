@@ -63,9 +63,9 @@ You are underage
 
 const checkAge = function (age) {
     if (age >= 18) {
-        return "You are an adult"
+        return 'You are an adult'
     } else {
-        return "You are underage"
+        return 'You are underage'
     }
 }
 
@@ -95,9 +95,9 @@ Affordable
 
 const checkPrice = function (price) {
     if (price > 100) {
-        return "Expensive"
+        return 'Expensive'
     } else {
-        return "Affordable"
+        return 'Affordable'
     }
 }
 
@@ -151,9 +151,9 @@ const calculate = function (num1, num2, operation) {
 }
 
 
-console.log(calculate(10, 5, "+"))
-console.log(calculate(10, 5, "*"))
-console.log(calculate(10, 5, "-"))
+console.log(calculate(10, 5, '+'))
+console.log(calculate(10, 5, '*'))
+console.log(calculate(10, 5, '-'))
 
 
 
@@ -185,15 +185,15 @@ B
 
 const getGrade = function (score) {
     if (score >= 90) {
-        return "A"
+        return 'A'
     } else if (score >= 80) {
-        return "B"
+        return 'B'
     } else if (score >= 70) {
-        return "C"
+        return 'C'
     } else if (score >= 60) {
-        return "D"
+        return 'D'
     } else {
-        return "F"
+        return 'F'
     }
 }
 
@@ -318,10 +318,10 @@ const getResult = function (name, score, bonus = 0) {
     }
 }
 
-console.log(getResult("ნიკა", 85, 10))
-console.log(getResult("გიორგი", 75))
-console.log(getResult("ანა", 45, 10))
-console.log(getResult("ლაშა", 40))
+console.log(getResult('ნიკა', 85, 10))
+console.log(getResult('გიორგი', 75))
+console.log(getResult('ანა', 45, 10))
+console.log(getResult('ლაშა', 40))
 
 
 
@@ -374,10 +374,10 @@ const calculateDelivery = function (city, distance, isExpress = false) {
     return `Delivery to ${city}: ${price} GEL`
 }
 
-console.log(calculateDelivery("Tbilisi", 4))
-console.log(calculateDelivery("Tbilisi", 12, true))
-console.log(calculateDelivery("Batumi", 25))
-console.log(calculateDelivery("Kutaisi", 40, true))
+console.log(calculateDelivery('Tbilisi', 4))
+console.log(calculateDelivery('Tbilisi', 12, true))
+console.log(calculateDelivery('Batumi', 25))
+console.log(calculateDelivery('Kutaisi', 40, true))
 
 
 
@@ -411,7 +411,7 @@ Interstellar - 2 tickets - 30 GEL
 
 const bookTicket = function (movie, age, ticketCount = 1) {
     if (ticketCount <= 0) {
-        return "Invalid ticket count"
+        return 'Invalid ticket count'
     }
 
     let pricePerTicket
@@ -429,10 +429,10 @@ const bookTicket = function (movie, age, ticketCount = 1) {
     return `${movie} - ${ticketCount} tickets - ${totalPrice} GEL`
 }
 
-console.log(bookTicket("Interstellar", 20, 2))
-console.log(bookTicket("Avatar", 10, 3))
-console.log(bookTicket("Batman", 15))
-console.log(bookTicket("Inception", 25, 0))
+console.log(bookTicket('Interstellar', 20, 2))
+console.log(bookTicket('Avatar', 10, 3))
+console.log(bookTicket('Batman', 15))
+console.log(bookTicket('Inception', 25, 0))
 
 
 
@@ -463,11 +463,11 @@ fee = 2
 
 const withdraw = function (balance, amount, fee = 2) {
     if (amount <= 0) {
-        return "Invalid amount"
+        return 'Invalid amount'
     }
 
     if (amount + fee > balance) {
-        return "Not enough money"
+        return 'Not enough money'
     }
 
     const remainingBalance = balance - (amount + fee)
