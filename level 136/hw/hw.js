@@ -65,7 +65,7 @@ console.log(animals)
 let numbers1 = [5, 10, 15, 20, 25, 30, 35]
 
 let sub1 = numbers1.slice(1, 4)
-let sub2 = numbers1.slice(-3)
+let sub2 = numbers1.slice(-1, -3)
 let sub3 = numbers1.slice(2)
 
 console.log(sub1)
@@ -110,14 +110,13 @@ console.log(games)
 
 let cities = ["Tbilisi", "Batumi", "Kutaisi", "Rustavi"]
 
-let newCities1 = cities.slice()
-newCities1.splice(1, 1)
-
-let newCities2 = cities.slice()
-newCities2.splice(2, 1, "Gori")
+let newCities1 = cities.toSpliced(1, 1)
+let newCities2 = cities.toSpliced(2, 1, "Gori")
+let newCities3 = cities.toSpliced(2, 0, "Zugdidi")
 
 console.log(newCities1)
 console.log(newCities2)
+console.log(newCities3)
 console.log(cities)
 
 
@@ -258,3 +257,4 @@ let firstFour = combined1.slice(0, 4)
 
 console.log(combined1)
 console.log(firstFour)
+
