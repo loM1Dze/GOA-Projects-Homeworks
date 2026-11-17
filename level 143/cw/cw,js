@@ -1,0 +1,16 @@
+let secretNumber = 7
+let guess
+let attempts = 0
+
+do {
+  guess = Number(prompt("შეიყვანეთ რიცხვი:"))
+  attempts++
+
+  if (guess !== secretNumber) {
+    console.log("Try again!")
+  } else {
+    console.log("Correct! You guessed it!")
+  }
+} while (guess !== secretNumber)
+
+console.log("ცდების რაოდენობა: " + attempts)
