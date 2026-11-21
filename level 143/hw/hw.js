@@ -131,11 +131,11 @@ console.log("You Win!")
 */
 
 
-let num
+let num2
 
 do {
-  num = Number(prompt())
-} while (num <= 0 || isNaN(num))
+  num2 = Number(prompt())
+} while (num2 <= 0 || isNaN(num2))
 
 console.log("Valid Number!")
 
@@ -149,17 +149,17 @@ console.log("Valid Number!")
 პროგრამამ უნდა დაითვალოს, სულ რამდენი რიცხვი შეიყვანა მომხმარებელმა (0-ის გარდა).
 */
 
-let count = 0
+let count1 = 0
 let num1
 
 do {
   num1 = Number(prompt())
   if (num1 !== 0) {
-    count++
+    count1++
   }
 } while (num1 !== 0)
 
-console.log(count)
+console.log(count1)
 
 
 
@@ -275,10 +275,10 @@ let numbers = [4, 8, 12, 15, 20, 25, 30];
 */
 
 
-let numbers = [4, 8, 12, 15, 20, 25, 30]
+let numbers1 = [4, 8, 12, 15, 20, 25, 30]
 
-for (let i8 = 0; i8 < numbers.length; i8++) {
-  if (numbers[i] === 15) {
+for (let i8 = 0; i8 < numbers1.length; i8++) {
+  if (numbers1[i] === 15) {
     console.log("Found!")
     break
   }
