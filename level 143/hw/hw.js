@@ -9,7 +9,7 @@ let i = 1
 do {
   console.log(i)
   i++
-} while (i <= 10)
+} while (i < 10)
 
 
 /*
@@ -24,7 +24,7 @@ let i1 = 10
 do {
   console.log(i1)
   i1--
-} while (i1 >= 1)
+} while (i1 > 1)
 
 
 
@@ -58,7 +58,7 @@ let i3 = 1
 do {
   sum += i3
   i3++
-} while (i3 <= n)
+} while (i3 < n)
 
 console.log(sum1)
 
@@ -76,7 +76,7 @@ let i4 = 1
 do {
   product *= i4
   i4++
-} while (i4 <= 10)
+} while (i4 < 10)
 
 console.log(product)
 
@@ -135,7 +135,7 @@ let num2
 
 do {
   num2 = Number(prompt())
-} while (num2 <= 0 || isNaN(num2))
+} while (num2 <= 0)
 
 console.log("Valid Number!")
 
@@ -177,7 +177,7 @@ do {
     console.log(i5)
   }
   i5++
-} while (i5 <= 50)
+} while (i5 < 50)
 
 
 
@@ -246,7 +246,7 @@ console.log(sum)
 // 13)for ციკლის გამოყენებით დაბეჭდე რიცხვები 1-დან 20-მდე, მაგრამ როგორც კი ციკლი მიაღწევს 10-ს, შეწყვიტე მუშაობა break-ის გამოყენებით.
 
 
-for (let i6 = 1; i6 <= 20; i6++) {
+for (let i6 = 1; i6 < 20; i6++) {
   if (i6 === 10) {
     break
   }
@@ -258,7 +258,7 @@ for (let i6 = 1; i6 <= 20; i6++) {
 // 14)დაწერე პროგრამა, რომელიც 1-დან 30-მდე დაბეჭდავს მხოლოდ ლუწ რიცხვებს. როგორც კი შეხვდება რიცხვს 20, ციკლი უნდა შეწყდეს.
 
 
-for (let i7 = 1; i7 <= 30; i7++) {
+for (let i7 = 1; i7 < 30; i7++) {
   if (i === 20) {
     break
   }
